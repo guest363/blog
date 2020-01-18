@@ -23,7 +23,7 @@ email: guest363@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Пишу о спорте, воспитании детей, программировании,
   прочитанных книгах. Структурирую собственные мысли.
-baseurl: "blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://github.com/guest363" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: OneLineFox
 telegramm_username: OneLineFox
