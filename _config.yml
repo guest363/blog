@@ -31,7 +31,7 @@ github_username:  guest363
 date_format: "%-d.%m.%Y"
 
 # Build settings
-theme: fox
+theme: null
 plugins:
   - jekyll-feed
 
