@@ -1,0 +1,10 @@
+<nav id="nav" class="nav--hide">
+    <h3 class="menu_link"><a href="{{ site.baseurl }}/">Домой</a></h3>
+      <ul>
+          {% for post in site.posts %}
+            <li class="menu_link">
+              <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+  </nav>

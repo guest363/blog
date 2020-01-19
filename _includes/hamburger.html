@@ -1,0 +1,24 @@
+<button class="hamburger" id="hamburger" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+    <svg class="icon icon-hamburger" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+        <g class="svg-hamburger">
+            <path class="line line-1" d="M5 13h90v14H5z" />
+            <path class="line line-2" d="M5 43h90v14H5z" />
+            <path class="line line-3" d="M5 73h90v14H5z" />
+        </g>
+    </svg>
+</button>
+
+<script>
+    const hamburgerInit = () => {
+        const button = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        button.onclick = () => {
+            button.classList.toggle("opened");
+            nav.classList.toggle("nav--hide");
+        };
+    }
+    document.addEventListener("DOMContentLoaded", function (event) {
+        hamburgerInit();
+    });
+</script>

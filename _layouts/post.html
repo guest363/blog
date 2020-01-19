@@ -3,20 +3,12 @@
 {% include head.html %}
 <body>
   {% include header.html %}
+  {% include hamburger.html %}
   <div class="blog">
-    <div class="nav">
-      <h3><a href="{{ site.baseurl }}/">Домой</a></h3>
-        <ul>
-            {% for post in site.posts %}
-              <li>
-                <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-    </div>
-    <div class="main">
-        {{ content }}
-      </div>
+    {% include nav.html %}
+    <article>
+      {{ content }}
+    </article>
     {% include footer.html %}
   </div>
 </body>

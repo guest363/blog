@@ -1,7 +1,46 @@
+html {
+    background: var(--color-background);
+    line-height: 1.6;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+footer {
+  position: relative;
+}
+article{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 var(--text-side);
+    min-height: 100%;
+}
+
+button,
+input[type="button"] {
+	border: none;
+	border-radius: 0;
+	background: var(--color-accent);
+	color: var(--color-title);
+    cursor: pointer;
+	display: inline-block;
+	padding: 1em 1.5em;
+	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
+}
+
+/* В такой класс транслируется джекилом inline code маркдауна */
+.highlighter-rouge {
+    padding: 2px 6px;
+    color: var(--color-title);
+    background: var(--color-accent);
+    border-radius: 4px;
+    box-shadow: var(--shadow-above);
+}
 .blog {
-    display: grid;
-    grid-gap: 2%;
-    grid-template-columns: 1fr 2fr;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 0;
 }
 .tags{
     display: flex;

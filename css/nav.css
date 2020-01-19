@@ -1,0 +1,39 @@
+.nav--hide {
+    display: none !important;
+}
+#nav {
+    width: 100vw;
+    backdrop-filter: blur(15px);
+    background: transparent;
+    box-shadow: 1px 0 0 var(--color-border);
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    padding: 10px 20px;
+}
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+#nav ul, #nav ol {
+        padding: 0;
+        margin: 0;
+}
+.menu_link{
+    display: block;
+    height: 33px;
+    padding: 0 9px;
+    overflow: hidden;
+    line-height: 33px;
+    color: var(--base-title);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 4px;
+    text-decoration: none;
+    font-style: normal;
+}
+

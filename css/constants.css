@@ -1,0 +1,12 @@
+html {
+    --color-black: #1f1f1f;
+    --color-title: var(--color-black);
+    --color-text: var(--color-black);
+    --color-background: #fff;
+    --color-border: #e1e1e1;
+    --color-accent: #f5a05a;
+    --color-hover: rgba(245,166,35,0.15);
+    
+    --shadow-above: 0 2px 5px rgba(0,0,0,0.15);
+    --text-side: 20px;
+}
