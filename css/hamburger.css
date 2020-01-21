@@ -1,10 +1,11 @@
  
 .hamburger {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
   font-size: 0.875em;
   padding: 0.75em;
+  z-index: 10;
 }
 
 .icon {

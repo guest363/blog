@@ -29,13 +29,32 @@ input[type="button"] {
 	transition: all 0.25s ease-in-out;
 }
 
-/* В такой класс транслируется джекилом inline code маркдауна */
 .highlighter-rouge {
+    overflow: auto;
+    color: #4d4d4c;
+    background: var(--color-panel);
+    box-shadow: var(--shadow-above);
+    padding: 12px var(--text-side);
+    margin-right: calc(var(--text-side)*-1);
+    margin-bottom: 18px;
+    margin-left: calc(var(--text-side)*-1);
+}
+ul {
+    padding-inline-start: var(--padding-list);
+}
+/* Для всех highlighter-rouge которые находятся в списке. Компенсирует отступы списка. */
+li > .highlighter-rouge {
+    margin-left: calc(var(--padding-list) * -1 - var(--text-side));
+    padding: 12px calc(var(--padding-list) + var(--text-side));
+}
+/* В такой класс транслируется джекилом inline code маркдауна */
+code.highlighter-rouge {
     padding: 2px 6px;
     color: var(--color-title);
     background: var(--color-accent);
     border-radius: 4px;
     box-shadow: var(--shadow-above);
+    margin: 0;
 }
 .blog {
    display: flex;
