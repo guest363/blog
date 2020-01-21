@@ -29,16 +29,16 @@
       <div class="menu-separator"></div>
       {% for category in site.categories %}
       <li class="menu--list--link">
-        <a href="#" onclick="{% assign filter = category[0] %}">{{ category }}</a>
+        <a href="{{ '#?filter=' | append: category[0] }}" >{{ category }}</a>
       </li>
       {% endfor %}
      
     </ul>
 
   </div>
-  {% assign posts = site.posts | where_exp:"categories",
-  "categories contains filter" %}
-  {{ filter }}
+
+  {% assign posts = site.posts | where_exp:"item",
+  "item.categories contains 'Программирование'" %}
   <div class="sub-menu">
     <ul class="sub-menu--list">
       {% for post in posts %}
