@@ -29,19 +29,24 @@
       <div class="menu-separator"></div>
       {% for category in site.categories %}
       <li class="menu--list--link">
-        <a href="{{ '#?filter=' | append: category[0] }}" >{{ category }}</a>
+        <a href="#" onclick="categorySelector(`{{ category[0] }}`)">{{ category }}</a>
       </li>
       {% endfor %}
-     
+
     </ul>
 
   </div>
 
-  {% assign posts = site.posts | where_exp:"item",
-  "item.categories contains 'Программирование'" %}
-  <div class="sub-menu">
+  {% assign categories = "" | split: '' %}
+  {% for category in site.categories %}
+  {% assign cat = category[0] | split: ''  %}
+  {% assign separator = ", " | split: ''  %}
+  {% assign categories = categories |concat: cat | concat: separator %}
+  {% endfor %}
+
+  <div class="sub-menu" id='sub-menu'>
     <ul class="sub-menu--list">
-      {% for post in posts %}
+      {% for post in categories[0] %}
       <li class="sub-menu--list--link">
         <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
       </li>
@@ -49,3 +54,37 @@
     </ul>
   </div>
 </nav>
+
+
+<script>
+  const button = document.getElementById('sub-menu');
+  const listOfCategory = `{{ categories }}`.split(', ');
+  /* Удалить пустой эл */
+  listOfCategory.pop();
+  console.log(listOfCategory);
+  const listOfMenu = [];
+  const listOfMenuCreator = () => {
+    listOfCategory.forEach(category => {
+      listOfMenu.push(`
+      <div class="sub-menu" id='sub-menu'>
+      <ul class="sub-menu--list">
+        {% for post in site.categories.${category} %}
+        <li class="sub-menu--list--link">
+          <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    `);
+    })
+  };
+  listOfMenuCreator();
+  console.log(listOfMenu);
+  const categorySelector = filter => {
+
+    console.log(filter)
+  };
+  document.addEventListener("DOMContentLoaded", function (event) {
+    categorySelector();
+  });
+</script>
