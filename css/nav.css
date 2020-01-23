@@ -55,6 +55,12 @@
     padding: 0 9px;
     overflow: hidden;
 }
+.sub-menu {
+    display: none;
+}
+.sub-menu--display {
+    display: block;
+}
 .logo{
     fill: var(--color-accent);
     width: 100%;

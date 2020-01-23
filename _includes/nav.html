@@ -27,64 +27,45 @@
         </svg>
       </a>
       <div class="menu-separator"></div>
+
       {% for category in site.categories %}
       <li class="menu--list--link">
-        <a href="#" onclick="categorySelector(`{{ category[0] }}`)">{{ category }}</a>
+        <a href="#" onclick="changeCategory(`{{ category[0] }}`)">{{ category[0] }}</a>
       </li>
       {% endfor %}
-
     </ul>
-
   </div>
 
-  {% assign categories = "" | split: '' %}
   {% for category in site.categories %}
-  {% assign cat = category[0] | split: ''  %}
-  {% assign separator = ", " | split: ''  %}
-  {% assign categories = categories |concat: cat | concat: separator %}
-  {% endfor %}
-
-  <div class="sub-menu" id='sub-menu'>
-    <ul class="sub-menu--list">
-      {% for post in categories[0] %}
-      <li class="sub-menu--list--link">
-        <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</nav>
-
-
-<script>
-  const button = document.getElementById('sub-menu');
-  const listOfCategory = `{{ categories }}`.split(', ');
-  /* Удалить пустой эл */
-  listOfCategory.pop();
-  console.log(listOfCategory);
-  const listOfMenu = [];
-  const listOfMenuCreator = () => {
-    listOfCategory.forEach(category => {
-      listOfMenu.push(`
-      <div class="sub-menu" id='sub-menu'>
+  {% assign posts = site.posts | where_exp:"item",
+      "item.categories contains category[0]" %}
+  {% if category[0] == "Разработка" %}
+  <div class="sub-menu sub-menu--display" id={{ 'sub-menu--' | append: category[0] }}>
+    {% else  %}
+    <div class="sub-menu" id={{ 'sub-menu--' | append: category[0] }}>
+      {% endif  %}
       <ul class="sub-menu--list">
-        {% for post in site.categories.${category} %}
+        {% for post in posts %}
         <li class="sub-menu--list--link">
           <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
         </li>
         {% endfor %}
       </ul>
     </div>
-    `);
-    })
-  };
-  listOfMenuCreator();
-  console.log(listOfMenu);
-  const categorySelector = filter => {
+    {% endfor %}
 
-    console.log(filter)
+</nav>
+
+
+<script>
+  let defaultOpenCategory = `sub-menu--Разработка`;
+  const changeCategory = category => {
+    const id = `sub-menu--${category}`;
+    if(defaultOpenCategory === id) return;
+    const displayElement = document.getElementById(id);
+    displayElement.classList.add("sub-menu--display");
+    const hideElement = document.getElementById(defaultOpenCategory);
+    hideElement.classList.remove("sub-menu--display");
+    defaultOpenCategory = id;
   };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    categorySelector();
-  });
 </script>
