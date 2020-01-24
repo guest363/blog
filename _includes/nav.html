@@ -30,9 +30,9 @@
 
       {% for category in site.categories %}
       {% if category[0] == "Разработка" %}
-      <li class="menu--list--link is--selected"  id={{ 'menu--list--link--' | append: category[0] }}>
+      <li class="menu--list--link is--selected" id={{ 'menu--list--link--' | append: category[0] }}>
         {% else  %}
-        <li class="menu--list--link"  id={{ 'menu--list--link--' | append: category[0] }}>
+      <li class="menu--list--link" id={{ 'menu--list--link--' | append: category[0] }}>
         {% endif  %}
         <a href="#" onclick="changeCategory(`{{ category[0] }}`)">{{ category[0] }}</a>
       </li>
@@ -62,24 +62,46 @@
 
 
 <script>
-  let defaultOpenCategory = `sub-menu--Разработка`;
-  let defaultSelectedMenu = `menu--list--link--Разработка`;
+  let defaultOpenCategory, defaultSelectedMenu;
+  const SUB_CSS = `sub-menu--`;
+  const LINK_CSS = `menu--list--link--`;
+  let categoryFromLocalstore = localStorage.getItem('category');
+
+  const hideDOM = (elem, action = true) => {
+    const domElement = document.getElementById(elem);
+    const cssClass = 'sub-menu--display';
+    action ? domElement.classList.remove(cssClass) :
+      domElement.classList.add(cssClass);
+  };
+  const unselectDOM = (elem, action = true) => {
+    const domElement = document.getElementById(elem);
+    const cssClass = 'is--selected';
+    action ? domElement.classList.remove(cssClass) :
+      domElement.classList.add(cssClass);
+  };
+
+  defaultOpenCategory = `${SUB_CSS}Разработка`;
+  defaultSelectedMenu = `${LINK_CSS}Разработка`;
+
   const changeCategory = category => {
-    const idShowElem = `sub-menu--${category}`;
-    const idSelectedElem = `menu--list--link--${category}`;
-    if(defaultOpenCategory === idShowElem) return;
-    const displayElement = document.getElementById(idShowElem);
-    const selectedElement = document.getElementById(idSelectedElem);
+    localStorage.setItem('category', category);
+    const idShowElem = `${SUB_CSS}${category}`;
+    const idSelectedElem = `${LINK_CSS}${category}`;
+    if (defaultOpenCategory === idShowElem) return;
 
-    displayElement.classList.add("sub-menu--display");
-    selectedElement.classList.add("is--selected");
+    hideDOM(idShowElem, false);
+    unselectDOM(idSelectedElem, false);
 
-    const hideElement = document.getElementById(defaultOpenCategory);
-    const unSelectElement = document.getElementById(defaultSelectedMenu);
-    hideElement.classList.remove("sub-menu--display");
-    unSelectElement.classList.remove("is--selected");
+    hideDOM(defaultOpenCategory);
+    unselectDOM(defaultSelectedMenu)
 
     defaultOpenCategory = idShowElem;
     defaultSelectedMenu = idSelectedElem;
   };
+
+  /* Если в localstore есть категория, то сделать ее активной */
+  if (categoryFromLocalstore) {
+    changeCategory(categoryFromLocalstore);
+  }
+
 </script>
