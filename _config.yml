@@ -29,7 +29,8 @@ twitter_username: OneLineFox
 telegramm_username: OneLineFox
 github_username:  guest363
 date_format: "%-d.%m.%Y"
-permalink: "/posts/:categories/:year/:title:output_ext"
+permalink: "/posts/:categories/:title"
+timezone: Europe/Moscow # временная зона
 
 # Build settings
 theme: null
