@@ -21,10 +21,7 @@
     text-decoration: none;
     color: black;
 }
-#nav ul, #nav ol {
-        padding: 0;
-        margin: 0;
-}
+
 .menu--list--link, .sub-menu--list--link{
     display: block;
     height: 33px;
@@ -37,6 +34,10 @@
     border-radius: 4px;
     text-decoration: none;
     font-style: normal;
+}
+
+.is--selected {
+    background: var(--color-accent);
 }
 .menu--list, .sub-menu--list{
     position: relative;

@@ -29,7 +29,11 @@
       <div class="menu-separator"></div>
 
       {% for category in site.categories %}
-      <li class="menu--list--link">
+      {% if category[0] == "Разработка" %}
+      <li class="menu--list--link is--selected"  id={{ 'menu--list--link--' | append: category[0] }}>
+        {% else  %}
+        <li class="menu--list--link"  id={{ 'menu--list--link--' | append: category[0] }}>
+        {% endif  %}
         <a href="#" onclick="changeCategory(`{{ category[0] }}`)">{{ category[0] }}</a>
       </li>
       {% endfor %}
@@ -59,13 +63,23 @@
 
 <script>
   let defaultOpenCategory = `sub-menu--Разработка`;
+  let defaultSelectedMenu = `menu--list--link--Разработка`;
   const changeCategory = category => {
-    const id = `sub-menu--${category}`;
-    if(defaultOpenCategory === id) return;
-    const displayElement = document.getElementById(id);
+    const idShowElem = `sub-menu--${category}`;
+    const idSelectedElem = `menu--list--link--${category}`;
+    if(defaultOpenCategory === idShowElem) return;
+    const displayElement = document.getElementById(idShowElem);
+    const selectedElement = document.getElementById(idSelectedElem);
+
     displayElement.classList.add("sub-menu--display");
+    selectedElement.classList.add("is--selected");
+
     const hideElement = document.getElementById(defaultOpenCategory);
+    const unSelectElement = document.getElementById(defaultSelectedMenu);
     hideElement.classList.remove("sub-menu--display");
-    defaultOpenCategory = id;
+    unSelectElement.classList.remove("is--selected");
+
+    defaultOpenCategory = idShowElem;
+    defaultSelectedMenu = idSelectedElem;
   };
 </script>
