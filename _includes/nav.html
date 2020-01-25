@@ -40,6 +40,8 @@
     </ul>
   </div>
 
+
+
   {% for category in site.categories %}
   {% assign posts = site.posts | where_exp:"item",
       "item.categories contains category[0]" %}
@@ -49,11 +51,17 @@
     <div class="sub-menu" id={{ 'sub-menu--' | append: category[0] }}>
       {% endif  %}
       <ul class="sub-menu--list">
-        {% for post in posts %}
-        <li class="sub-menu--list--link">
-          <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-        </li>
+
+        {% assign groupPosts = posts | group_by: "tag" %}
+          {% for group in groupPosts %}
+          <span class="sub-menu--list--header">{{group.name}}</span>
+          {% for post in group.items %}
+          <li class="sub-menu--list--link">
+            <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
         {% endfor %}
+
       </ul>
     </div>
     {% endfor %}
