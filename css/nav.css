@@ -20,6 +20,8 @@
 #nav a {
     text-decoration: none;
     color: black;
+    line-height: normal;
+    display: block;
 }
 
 
@@ -37,21 +39,22 @@
     list-style: none;
 }
 .menu--list--link, .sub-menu--list--link{
-    display: block;
-    height: 33px;
+    display: flex;
+    min-height: 33px;
+    height: auto;
     padding: 0 9px;
     overflow: hidden;
     line-height: 33px;
     color: var(--color-title);
     text-overflow: ellipsis;
-    white-space: nowrap;
     border-radius: 4px;
     text-decoration: none;
     font-style: normal;
     cursor: pointer;
+    align-items: center;
 }
 .sub-menu--list--header {
-    padding: 9px 9px 0 9px;
+    padding: 13px 9px 5px 9px;
     font-weight: bold;
 }
 .menu--list--logo {
