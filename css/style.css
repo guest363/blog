@@ -15,6 +15,11 @@ article{
     padding: 0 var(--text-side);
     min-height: 100%;
 }
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 350px;
+}
 
 button,
 input[type="button"] {
@@ -28,11 +33,11 @@ input[type="button"] {
 	text-transform: uppercase;
 	transition: all 0.25s ease-in-out;
 }
-.highlight {
+.highlight, pre {
     overflow: auto;
 }
 
-.highlighter-rouge {
+.highlighter-rouge, pre {
     overflow: auto;
     color: #4d4d4c;
     background: var(--color-panel);
