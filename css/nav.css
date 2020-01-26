@@ -38,11 +38,18 @@
     text-align: left;
     list-style: none;
 }
+.menu--list--link {
+    min-height: 33px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.sub-menu--list--link {
+    min-height: 1em;
+}
 .menu--list--link, .sub-menu--list--link{
     display: flex;
-    min-height: 33px;
     height: auto;
-    padding: 0 9px;
+    padding: 4px 9px;
     overflow: hidden;
     line-height: 33px;
     color: var(--color-title);
@@ -55,7 +62,8 @@
 }
 .sub-menu--list--header {
     padding: 13px 9px 5px 9px;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 .menu--list--logo {
     display: flex;
