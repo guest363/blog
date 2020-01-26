@@ -76,3 +76,28 @@ code.highlighter-rouge {
 .tag{
     padding: 0 10px;
 }
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+tr:nth-child(odd){
+    background-color: var(--tr-odd-color);
+}
+th {
+    border-bottom: var(--table--border);
+    border-top: var(--table--border);
+    padding: 10px 10px;
+    margin: 0;
+    width: fit-content;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+td {
+    width: fit-content;
+    margin: 0;
+    border-bottom: var(--table--border);
+    border-top: var(--table--border);
+    padding: 10px;
+}

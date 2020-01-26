@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: book-review
 title: Любовь на всю жизнь руководство для пар
 date:   2020-01-26 
 categories: [Дети]
 tag: Рецензия
+cover: '/blog/assets/images/children/love-for-life.png'
+author: 'Харвилл Хендрикс и Хелен Хант'
+themes: 'Взаимоотношения людей, психология, детская психология'
+size: '321'
+mark: '9 из 10 имаго терапевтов'
+link: 'https://www.mann-ivanov-ferber.ru/books/lyubov-na-vsyu-zhizn/'
 ---
-
-![Обложка книги](/blog/assets/images/children/love-for-life.png)
 
 # Краткая оценка
 Прочитав книгу ее хочется подарить своему другу, чтобы сделать его жизнь лучше. 

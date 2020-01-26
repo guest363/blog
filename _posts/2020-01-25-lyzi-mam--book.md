@@ -1,12 +1,17 @@
 ---
-layout: post
-title: Как стать ленивой мамой
+layout: book-review
+title: Самостоятельный ребенок, или Как стать "ленивой мамой"
 date:   2020-01-18 
 categories: [Дети]
 tag: Рецензия
+cover: '/blog/assets/images/children/lazy-mam.jpeg'
+author: 'Анна Быкова'
+themes: 'Детская психология, педагогика'
+size: '272'
+mark: '8 из 10 ленивых мам'
+link: 'https://www.labirint.ru/books/529602/'
 ---
 
-![Обложка книги](/blog/assets/images/children/lazy-mam.jpeg)
 
 # Краткая оценка
 Хорошая книга. Попадает в мой топ рекомендаций для прочтения молодым родителям. Стоит периодически пролистываит для освежения в памяти.
