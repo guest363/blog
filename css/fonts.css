@@ -1,7 +1,7 @@
 html {
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * 
         ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (2560 - 300)));
+    font-size: var(--font-size);
     font-family: sans-serif;
     color: var(--color-black);
 }

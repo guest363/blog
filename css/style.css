@@ -6,15 +6,11 @@ body {
     height: 100%;
     margin: 0;
 }
-footer {
-  position: relative;
-}
 article{
     box-sizing: border-box;
     width: 100%;
     padding: 0 var(--text-side);
     min-height: 100%;
-    margin-bottom: 50px;
 }
 img {
     object-fit: contain;
@@ -68,7 +64,7 @@ code.highlighter-rouge {
 .blog {
    display: flex;
    flex-direction: column;
-   padding: 10px 0;
+   padding: 10px  0 0 0;
 }
 .tags{
     display: flex;
@@ -100,4 +96,10 @@ td {
     border-bottom: var(--table--border);
     border-top: var(--table--border);
     padding: 10px;
+}
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

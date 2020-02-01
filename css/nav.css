@@ -79,7 +79,7 @@
     display: block;
 }
 .logo{
-    fill: var(--color-accent);
+    fill: black;
     width: 100%;
     box-sizing: border-box;
     width: 120px;
