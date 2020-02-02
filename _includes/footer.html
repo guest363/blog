@@ -6,6 +6,7 @@
         "item.title != page.title" %}
         {% assign postsFiltredLimited = postsFiltred limit:2 %}
         <div class="footer--nav--item footer--nav--item__before"><a href="{{site.baseurl}}{{postsFiltredLimited[0].url}}">{{postsFiltredLimited[0].title}}</a></div>
+        <div class="footer--nav--item__separator"></div>
         <div class="footer--nav--item footer--nav--item__after"><a href="{{site.baseurl}}{{postsFiltredLimited[1].url}}">{{postsFiltredLimited[1].title}}</a></div>
     </div>
 </footer>

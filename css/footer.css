@@ -11,17 +11,21 @@ footer a {
 }
 .footer--nav{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  padding-left: calc(1em + 60px);
+  padding-right: 30px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 .footer--nav--item{
-  padding: 10px 6px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
-.footer--nav--item__before::before{
+/* .footer--nav--item__before::before{
   content: "";
   width: 0;
   display: block;
@@ -30,7 +34,16 @@ footer a {
   border-bottom: calc(var(--font-size) * 0.5 ) solid transparent;
   border-right: calc(var(--font-size) * 0.8) solid var(--placeholder-white-color);
   position: absolute;
-  left: 5px;
+  bottom: 0;
+}
+.footer--nav--item__before::after{
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: var(--placeholder-white-color);
+  position: absolute;
+  bottom: -calc(var(--font-size) * 0.8);
 }
 .footer--nav--item__after::after{
   content: "";
@@ -41,5 +54,15 @@ footer a {
   border-top: calc(var(--font-size) * 0.5) solid transparent;
   border-left: calc(var(--font-size) * 0.8) solid var(--placeholder-white-color);
   position: absolute;
-  right: 5px;
+  bottom: 0;
+  right: 0;
+} */
+.footer--nav--item a {
+  font-size: 0.8em;
+}
+.footer--nav--item__separator{
+  width: 5px;
+  padding: 0 5px;
+  height: 100%;
+  background-color: var(--placeholder-white-color);
 }
