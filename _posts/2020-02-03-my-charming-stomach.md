@@ -4,7 +4,7 @@ title: Очаровательный кишечник. Как самый могу
 date:   2020-02-03 
 categories: [Научпоп]
 tag: Рецензия
-cover: '/blog/assets/images/my-charming-stomach.png'
+cover: '/blog/assets/images/my-charming-stomach.gif'
 author: 'Джулия Эндерс'
 themes: 'Медицина, анатомия'
 size: '336'
