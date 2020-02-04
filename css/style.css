@@ -12,6 +12,10 @@ article{
     padding: 0 var(--text-side);
     min-height: 100%;
 }
+article table {
+    display: block;
+    overflow: scroll;
+}
 img {
     object-fit: contain;
     width: 100%;
@@ -87,7 +91,6 @@ th {
     padding: 10px 10px;
     margin: 0;
     width: fit-content;
-    font-size: 1.2em;
     vertical-align: middle;
 }
 td {

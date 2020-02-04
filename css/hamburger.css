@@ -29,7 +29,7 @@
   transform-origin: 1em 2.5em;
 }
 .hamburger--svg--line:nth-child(3) {
-  transform-origin: 1em 5em;
+  transform-origin: 1em 5.5em;
 }
 
 .hamburger.opened .hamburger--svg--line:nth-child(1) {
