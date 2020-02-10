@@ -24,9 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Пишу о спорте, воспитании детей, программировании,
   прочитанных книгах. Структурирую собственные мысли.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://guest363.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: OneLineFox
-telegramm_username: OneLineFox
+url: "https://owl-shaker.ru/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: Owl-Shaker
+telegramm_username: Owl-Shaker
 github_username:  guest363
 date_format: "%-d.%m.%Y"
 permalink: "/posts/:categories/:title"
