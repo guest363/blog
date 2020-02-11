@@ -5,8 +5,8 @@ date:   2020-02-06 17:45:33 +0500
 categories: Разработка
 tag: Linux
 ---
-![Mind map по DNS](/blog/assets/images/dns--map-1--web--low.png)
-<a href="/blog/assets/images/dns--map-1--download.png" download>
+![Mind map по DNS](/assets/images/dns--map-1--web--low.png)
+<a href="/assets/images/dns--map-1--download.png" download>
   Скачать в полном размере
 </a>
 
@@ -25,7 +25,7 @@ DNS сервера BIND (Berkeley Internet Name Domain, ранее: Berkeley Int
 
 Устанавливается для Debian подобных ОС `sudo apt install bind9`. Чобы посмотреть пакеты нужные для работы bind9 `apt cache searche bind9`
 
-![apt cache searche bind9](/blog/assets/images/bind--apt-cache.png)
+![apt cache searche bind9](/assets/images/bind--apt-cache.png)
 
 ## Структура DNS
 
@@ -214,8 +214,8 @@ ns1.yandex.ru.          3565    IN      AAAA    2a02:6b8::1
 ;; MSG SIZE  rcvd: 238
 ```
 
-![Mind map по настройке](/blog/assets/images/dns--map-2--web--low.png)
-<a href="/blog/assets/images/dns--map-2--download.png" download>
+![Mind map по настройке](/assets/images/dns--map-2--web--low.png)
+<a href="/assets/images/dns--map-2--download.png" download>
   Скачать в полном размере
 </a>
 

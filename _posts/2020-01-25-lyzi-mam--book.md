@@ -4,7 +4,7 @@ title: Самостоятельный ребенок, или Как стать "
 date:   2020-01-18 
 categories: [Дети]
 tag: Рецензия
-cover: '/blog/assets/images/children/lazy-mam.jpeg'
+cover: '/assets/images/children/lazy-mam.jpeg'
 author: 'Анна Быкова'
 themes: 'Детская психология, педагогика'
 size: '272'
