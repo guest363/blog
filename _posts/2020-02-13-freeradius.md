@@ -5,7 +5,7 @@ date:   2020-02-13 17:45:33 +0500
 categories: Разработка
 tag: Linux
 ---
-![Mind map по Radius](/assets/images/radius--map-1--web--low.png)
+![Mind map по Radius](/assets/images/radius--map-1--low.png)
 <a href="/assets/images/radius--map-1--download.png" download>
   Скачать в полном размере
 </a>
@@ -57,13 +57,13 @@ Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
 - 4 Accounting-Request
 - 5 Accounting-Response
 - 11 Access-Challenge
-- 12/13 Status server/client (эксперементально)|
+- 12/13 Status server/client (эксперементально)
 - 40 Disconnect-Request (RFC 3576)
 - 41 Disconnect-ACK (RFC 3576)
 - 42 Disconnect-NAK (RFC 3576)
 - 255 Зарезервировано
 
-![Mind map по настройке Freeradius](/assets/images/radius--map-2--web--low.png)
+![Mind map по настройке Freeradius](/assets/images/radius--map-2--low.png)
 <a href="/assets/images/radius--map-2--download.png" download>
   Скачать в полном размере
 </a>
