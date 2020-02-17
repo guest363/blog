@@ -2,13 +2,15 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %} {% include hamburger.html %}
-    {% include nav.html %}
+    {% include header.html %} {% include hamburger.html %} 
+    {% include nav.html
+    %}
     <div class="blog">
       <article id="article">
         {{ content }}
       </article>
-      {% include article-nav.html %} {% include footer.html %}
+      {% include article-nav.html %}
     </div>
+    {% include footer.html %}
   </body>
 </html>
