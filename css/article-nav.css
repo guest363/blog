@@ -2,7 +2,7 @@
     display: none;
     position: sticky;
     top: 10px;
-    max-width: fit-content;
+    max-width: 300px;
     height: min-content;
   }
 
