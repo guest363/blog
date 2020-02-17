@@ -1,109 +1,119 @@
 html {
-    background: var(--color-background);
-    line-height: 1.6;
+  background: var(--color-background);
+  line-height: 1.6;
 }
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
-article{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 var(--text-side);
-    min-height: 100%;
-    max-width: 700px;
+article {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 var(--text-side);
+  min-height: 100%;
+  max-width: 700px;
 }
 article table {
-    display: block;
-    overflow: scroll;
+  display: block;
+  overflow: scroll;
 }
 img {
-    object-fit: contain;
-    width: 100%;
-    height: 350px;
+  object-fit: contain;
+  width: 100%;
+  height: 350px;
 }
 
 button,
-input[type="button"] {
-	border: none;
-	border-radius: 0;
-	background: var(--color-accent);
-	color: var(--color-title);
-    cursor: pointer;
-	display: inline-block;
-	padding: 1em 1.5em;
-	text-transform: uppercase;
-	transition: all 0.25s ease-in-out;
+input[type='button'] {
+  border: none;
+  border-radius: 0;
+  background: var(--color-accent);
+  color: var(--color-title);
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
 }
-.highlight, pre {
-    overflow: auto;
+.highlight,
+pre {
+  overflow: auto;
 }
 
-.highlighter-rouge, pre {
-    overflow: auto;
-    color: #4d4d4c;
-    background: var(--color-panel);
-    box-shadow: var(--shadow-above);
-    padding: 12px var(--text-side);
-    margin-right: calc(var(--text-side)*-1);
-    margin-bottom: 18px;
-    margin-left: calc(var(--text-side)*-1);
+.highlighter-rouge,
+pre {
+  overflow: auto;
+  color: #4d4d4c;
+  background: var(--color-panel);
+  box-shadow: var(--shadow-above);
+  padding: 12px var(--text-side);
+  margin-right: calc(var(--text-side) * -1);
+  margin-bottom: 18px;
+  margin-left: calc(var(--text-side) * -1);
 }
 ul {
-    padding-inline-start: var(--padding-list);
+  padding-inline-start: var(--padding-list);
 }
 /* Для всех highlighter-rouge которые находятся в списке. Компенсирует отступы списка. */
 li > .highlighter-rouge {
-    margin-left: calc(var(--padding-list) * -1 - var(--text-side));
-    padding: 12px calc(var(--padding-list) + var(--text-side));
+  margin-left: calc(var(--padding-list) * -1 - var(--text-side));
+  padding: 12px calc(var(--padding-list) + var(--text-side));
 }
 /* В такой класс транслируется джекилом inline code маркдауна */
 code.highlighter-rouge {
-    padding: 2px 6px;
-    color: var(--color-title);
-    background: var(--color-accent);
-    border-radius: 4px;
-    box-shadow: var(--shadow-above);
-    margin: 0;
+  padding: 2px 6px;
+  color: var(--color-title);
+  background: var(--color-accent);
+  border-radius: 4px;
+  box-shadow: var(--shadow-above);
+  margin: 0;
 }
 .blog {
-   display: flex;
-   flex-direction: column;
-   padding: 10px  0 0 0;
+  padding: 10px 0 0 0;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.tags{
-    display: flex;
+@media screen and (min-width: 900px) {
+  .blog {
+    padding: 10px 2em 0 2em;
+  }
 }
-.tag{
-    padding: 0 10px;
+.tags {
+  display: flex;
+}
+.tag {
+  padding: 0 10px;
 }
 
 table {
-    border-collapse: collapse;
-    text-align: left;
-    width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
 }
-tr:nth-child(odd){
-    background-color: var(--tr-odd-color);
+tr:nth-child(odd) {
+  background-color: var(--tr-odd-color);
 }
 th {
-    border-bottom: var(--table--border);
-    border-top: var(--table--border);
-    padding: 10px 10px;
-    margin: 0;
-    width: fit-content;
-    vertical-align: middle;
+  border-bottom: var(--table--border);
+  border-top: var(--table--border);
+  padding: 10px 10px;
+  margin: 0;
+  width: fit-content;
+  vertical-align: middle;
 }
 td {
-    width: fit-content;
-    margin: 0;
-    border-bottom: var(--table--border);
-    border-top: var(--table--border);
-    padding: 10px;
+  width: fit-content;
+  margin: 0;
+  border-bottom: var(--table--border);
+  border-top: var(--table--border);
+  padding: 10px;
 }
 .flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
