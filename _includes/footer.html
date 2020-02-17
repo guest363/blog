@@ -1,7 +1,7 @@
 <footer class="flex-center">
   <div class="footer--nav">
-    {% assign posts = site.posts | where_exp:"item", "
-    item.categories contains page.categories[0]" %} 
+    {% assign posts = site.posts | where_exp:"item", 
+    "item.category == page.categories[0]" %} 
     
     {% assign postsFiltred = posts | where_exp:"item",
     "item.title != page.title" %} 
