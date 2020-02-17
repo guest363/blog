@@ -35,11 +35,6 @@ input[type='button'] {
   text-transform: uppercase;
   transition: all 0.25s ease-in-out;
 }
-.highlight,
-pre {
-  overflow: initial;
-  display: inline-block;
-}
 
 pre {
   overflow: auto;
