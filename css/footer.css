@@ -21,6 +21,9 @@ footer a {
 .footer--nav--item{
   cursor: pointer;
 }
+.footer--nav--header {
+  color: var(--placeholder-white-color);
+}
 /* .footer--nav--item__before::before{
   content: "";
   width: 0;
