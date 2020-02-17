@@ -11,19 +11,15 @@ footer a {
 }
 .footer--nav{
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  padding-left: calc(1em + 60px);
-  padding-right: 30px;
+  padding-left: 7em;
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  flex-direction: column;
 }
 .footer--nav--item{
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  position: relative;
 }
 /* .footer--nav--item__before::before{
   content: "";

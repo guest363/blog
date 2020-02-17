@@ -1,12 +1,18 @@
 <footer class="flex-center">
-    <div class="footer--nav">
-        {% assign posts = site.posts | where_exp:"item",
-        "item.categories contains page.categories[0]" %}
-        {% assign postsFiltred = posts | where_exp:"item",
-        "item.title != page.title" %}
-        {% assign postsFiltredLimited = postsFiltred limit:2 %}
-        <div class="footer--nav--item footer--nav--item__before"><a href="{{site.baseurl}}{{postsFiltredLimited[0].url}}">{{postsFiltredLimited[0].title}}</a></div>
-        <div class="footer--nav--item__separator"></div>
-        <div class="footer--nav--item footer--nav--item__after"><a href="{{site.baseurl}}{{postsFiltredLimited[1].url}}">{{postsFiltredLimited[1].title}}</a></div>
+  <div class="footer--nav">
+    {% assign posts = site.posts | where_exp:"item", "
+    item.categories contains page.categories[0]" %} 
+    
+    {% assign postsFiltred = posts | where_exp:"item",
+    "item.title != page.title" %} 
+
+    <div class="footer--nav--header">
+      Остальные статьи на тему {{page.categories[0]}}
     </div>
+    {% for post in postsFiltred %}
+    <div class="footer--nav--item">
+      <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    </div>
+    {% endfor %}
+  </div>
 </footer>
