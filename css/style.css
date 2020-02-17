@@ -41,7 +41,7 @@ pre {
   display: inline-block;
 }
 
-.highlighter pre {
+pre {
   overflow: auto;
   color: #4d4d4c;
   background: var(--color-panel);
