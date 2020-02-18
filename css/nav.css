@@ -115,6 +115,7 @@
       background-color: var(--color-background);
       backdrop-filter: none;
       grid-area: nav;
+      display: block !important;
     }
     .sub-menu--list {
         width: max-content;
