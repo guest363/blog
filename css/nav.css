@@ -90,14 +90,15 @@
     width: 120px;
 }
 .menu {
-    width: 150px;
+    width: 170px;
     flex-grow: 0;
     flex-shrink: 0;
     border-right: 1px solid var(--color-border);
     position: relative;
     height: 100%;
-    overflow-y: auto;
     overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color--thumb) var(--color-background);
 }
 .menu-separator {
     height: 1px;

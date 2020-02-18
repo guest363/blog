@@ -47,6 +47,8 @@ pre {
   margin-right: calc(var(--text-side) * -1);
   margin-bottom: 18px;
   margin-left: calc(var(--text-side) * -1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-color--thumb) var(--color-background);
 }
 ul {
   padding-inline-start: var(--padding-list);
