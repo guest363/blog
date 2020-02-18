@@ -57,7 +57,7 @@
 .sub-menu--list--link {
   display: flex;
   height: auto;
-  padding: 4px 9px;
+  padding: 9px;
   overflow: hidden;
   line-height: 33px;
   color: var(--color-title);
@@ -68,8 +68,11 @@
   cursor: pointer;
   align-items: center;
 }
+.sub-menu--list .sub-menu--list--header:nth-child(1) {
+  padding: 0 9px 5px 9px;
+}
 .sub-menu--list--header {
-  padding: 13px 9px 5px 9px;
+  padding: 20px 9px 5px 9px;
   font-weight: bolder;
   font-size: 1.2em;
 }
