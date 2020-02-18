@@ -6,6 +6,7 @@ html {
     --color-border: #e1e1e1;
     --color-accent: #f5a05a;
     --color-hover: rgba(245,166,35,0.15);
+    --color-menu: #f7f7f7;
     
     --shadow-above: 0 2px 5px rgba(0,0,0,0.15);
     --text-side: 20px;
@@ -16,5 +17,5 @@ html {
     --placeholder-white-bg-color: #6f6f6f;
     --scroll-color--thumb: #999;
     --scroll-color--corner: rgb(109, 109, 109);
-    --font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (2560 - 300)));
+    --font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (2560 - 300)));
 }
