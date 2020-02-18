@@ -119,9 +119,7 @@ td {
 
 @media screen and (min-width: 900px) {
   body {
-    grid-template-areas:
-      'nav blog'
-      'footer footer';
+    grid-template-areas: 'nav blog';
     grid-template-columns: min-content;
     display: grid;
   }

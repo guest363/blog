@@ -1,131 +1,145 @@
 .nav--hide {
-    display: none !important;
+  display: none !important;
 }
 #nav {
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 1px 0 0 var(--color-border);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    padding: 10px 20px;
-    margin: 0;
-    padding: 0;
-    overscroll-behavior: none;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 1px 0 0 var(--color-border);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  padding: 10px 20px;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
 }
-@supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+@supports (
+  (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
+) {
   #nav {
-      backdrop-filter: blur(15px);
-      background: transparent;
-    }
+    backdrop-filter: blur(15px);
+    background: transparent;
+  }
 }
 #nav a {
-    text-decoration: none;
-    color: black;
-    line-height: normal;
-    display: block;
+  text-decoration: none;
+  color: black;
+  line-height: normal;
+  display: block;
 }
-
 
 .is--selected {
-    background: var(--color-accent);
+  background: var(--color-accent);
 }
-.menu--list, .sub-menu--list{
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    padding: 15px 9px;
-    text-align: left;
-    list-style: none;
+.menu--list,
+.sub-menu--list {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 15px 9px;
+  text-align: left;
+  list-style: none;
 }
 .menu--list--link {
-    min-height: 33px;
-    font-size: 1.2em;
-    font-weight: bold;
+  min-height: 33px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .sub-menu--list--link {
-    min-height: 1em;
+  min-height: 1em;
 }
-.menu--list--link, .sub-menu--list--link{
-    display: flex;
-    height: auto;
-    padding: 4px 9px;
-    overflow: hidden;
-    line-height: 33px;
-    color: var(--color-title);
-    text-overflow: ellipsis;
-    border-radius: 4px;
-    text-decoration: none;
-    font-style: normal;
-    cursor: pointer;
-    align-items: center;
+.menu--list--link,
+.sub-menu--list--link {
+  display: flex;
+  height: auto;
+  padding: 4px 9px;
+  overflow: hidden;
+  line-height: 33px;
+  color: var(--color-title);
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  text-decoration: none;
+  font-style: normal;
+  cursor: pointer;
+  align-items: center;
 }
 .sub-menu--list--header {
-    padding: 13px 9px 5px 9px;
-    font-weight: bolder;
-    font-size: 1.2em;
+  padding: 13px 9px 5px 9px;
+  font-weight: bolder;
+  font-size: 1.2em;
 }
 .menu--list--logo {
-    display: flex;
-    align-self: center;
-    height: 70px;
-    padding: 0 9px;
-    overflow: hidden;
+  display: flex;
+  align-self: center;
+  height: 70px;
+  padding: 0 9px;
+  overflow: hidden;
 }
 .sub-menu {
-    display: none;
+  display: none;
 }
 .sub-menu--display {
-    display: block;
+  display: block;
 }
-.logo{
-    fill: black;
-    width: 100%;
-    box-sizing: border-box;
-    width: 120px;
+.logo {
+  fill: black;
+  width: 100%;
+  box-sizing: border-box;
+  width: 120px;
 }
 .menu {
-    width: min-content;
-    flex-grow: 0;
-    flex-shrink: 0;
-    border-right: 1px solid var(--color-border);
-    position: relative;
-    height: 100%;
-    overscroll-behavior: contain;
-    scrollbar-width: thin;
-    scrollbar-color: var(--scroll-color--thumb) var(--color-background);
+  width: min-content;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-right: 1px solid var(--color-border);
+  position: relative;
+  height: 100%;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-color--thumb) var(--color-background);
 }
 .menu-separator {
-    height: 1px;
-    margin: 15px 0 6px;
-    background: var(--color-border);
+  height: 1px;
+  margin: 15px 0 6px;
+  background: var(--color-border);
 }
 .sub-menu {
-    flex-grow: 1;
-    height: 100%;
-    overflow: hidden;
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 900px) {
-    #nav {
-      background-color: var(--color-background);
-      backdrop-filter: none;
-      grid-area: nav;
-      display: flex !important;
-      width: auto;
-      position: inherit;
-    }
-    .sub-menu--list {
-        width: max-content;
-        max-width: 250px;
-    }
-    .menu, .sub-menu {
+  #nav {
+    background-color: var(--color-background);
+    backdrop-filter: none;
+    grid-area: nav;
+    display: flex !important;
+    width: auto;
+    position: inherit;
+  }
+  .sub-menu--list {
+    width: max-content;
+    max-width: 250px;
+  }
+  .menu,
+  .sub-menu {
     position: sticky;
     top: 0;
-    height: min-content;
-    }
   }
+  .sub-menu--list {
+    padding: 0 0 0 2em;
+  }
+  .menu-separator {
+    background: none;
+    border-bottom: 1px dashed var(--color-border);
+  }
+  .menu {
+    border-right: 1px dashed var(--color-border);
+    height: 100vh;
+  }
+}
