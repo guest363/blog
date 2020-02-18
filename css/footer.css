@@ -72,4 +72,7 @@ footer a {
   footer {
     grid-area: footer;
   }
+  .footer--nav {
+    display: none;
+  }
 }

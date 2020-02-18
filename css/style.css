@@ -123,6 +123,7 @@ td {
       'nav blog'
       'footer footer';
     grid-template-columns: min-content;
+    display: grid;
   }
   .blog {
     grid-area: blog;

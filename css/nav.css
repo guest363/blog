@@ -90,7 +90,7 @@
     width: 120px;
 }
 .menu {
-    width: 170px;
+    width: min-content;
     flex-grow: 0;
     flex-shrink: 0;
     border-right: 1px solid var(--color-border);
@@ -117,9 +117,15 @@
       grid-area: nav;
       display: flex !important;
       width: auto;
+      position: inherit;
     }
     .sub-menu--list {
         width: max-content;
         max-width: 250px;
+    }
+    .menu, .sub-menu {
+    position: sticky;
+    top: 0;
+    height: min-content;
     }
   }
