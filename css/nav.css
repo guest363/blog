@@ -130,6 +130,7 @@
   .sub-menu {
     position: sticky;
     top: 0;
+    height: 100vh;
   }
   .sub-menu--list {
     padding: 0 0 0 2em;
@@ -140,6 +141,5 @@
   }
   .menu {
     border-right: 1px dashed var(--color-border);
-    height: 100vh;
   }
 }
