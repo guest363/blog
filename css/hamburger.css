@@ -50,3 +50,8 @@
 	width: 1px;
 	overflow: hidden;
 }
+@media screen and (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}

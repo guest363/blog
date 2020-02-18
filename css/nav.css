@@ -3,7 +3,7 @@
 }
 #nav {
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 1px 0 0 var(--color-border);
     position: fixed;
     top: 0;
@@ -110,3 +110,14 @@
     height: 100%;
     overflow: hidden;
 }
+@media screen and (min-width: 900px) {
+    #nav {
+      background-color: var(--color-background);
+      backdrop-filter: none;
+      grid-area: nav;
+    }
+    .sub-menu--list {
+        width: max-content;
+        max-width: 250px;
+    }
+  }

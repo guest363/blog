@@ -117,6 +117,13 @@ td {
   align-items: center;
 }
 
+
+@media screen and (min-width: 900px) {
+    .blog {
+      grid-area: blog;
+    }
+  }
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
