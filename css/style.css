@@ -1,6 +1,8 @@
 html {
   background: var(--color-background);
   line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-color--thumb) var(--color-background);
 }
 body {
   height: 100%;
@@ -113,10 +115,27 @@ td {
   align-items: center;
 }
 
-::-webkit-scrollbar { width: 3px; height: 3px;}
-::-webkit-scrollbar-button {  background-color: #666; }
-::-webkit-scrollbar-track {  background-color: #999;}
-::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-::-webkit-scrollbar-corner { background-color: #999;}
-::-webkit-resizer { background-color: #666;}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-color--thumb);
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: var(--scroll-color--thumb);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: var(--scroll-color--corner);
+}
+::-webkit-resizer {
+  background-color: var(--scroll-color--thumb);
+}
