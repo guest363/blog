@@ -18,6 +18,7 @@ article {
 article table {
   display: block;
   overflow: scroll;
+  scrollbar-width: thin;
 }
 img {
   object-fit: contain;
@@ -71,7 +72,7 @@ code.highlighter-rouge {
   padding: 10px 0 0 0;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -117,17 +118,6 @@ td {
   align-items: center;
 }
 
-@media screen and (min-width: 1300px) {
-  body {
-    grid-template-areas: 'nav blog';
-    grid-template-columns: min-content;
-    display: grid;
-  }
-  .blog {
-    grid-area: blog;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -152,3 +142,19 @@ td {
 ::-webkit-resizer {
   background-color: var(--scroll-color--thumb);
 }
+
+@media screen and (min-width: 1300px) {
+  body {
+    grid-template-areas: 'nav blog';
+    grid-template-columns: min-content;
+    display: grid;
+  }
+  .blog {
+    grid-area: blog;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+}
+

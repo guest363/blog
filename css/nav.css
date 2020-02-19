@@ -99,7 +99,7 @@
   width: min-content;
   flex-grow: 0;
   flex-shrink: 0;
-  border-right: 1px solid var(--color-border);
+  border-right: 1px dashed var(--color-border);
   position: relative;
   height: 100%;
   overscroll-behavior: contain;
@@ -109,12 +109,18 @@
 .menu-separator {
   height: 1px;
   margin: 15px 0 6px;
-  background: var(--color-border);
+  border-bottom: 1px dashed var(--color-border);
 }
 .sub-menu {
   flex-grow: 1;
   height: 100%;
   overflow: hidden;
+}
+@media screen (min-width: 900px) and (max-width: 1300px) {
+  .sub-menu--list {
+    max-width: 150px;
+  }
+
 }
 @media screen and (min-width: 1300px) {
   #nav {
@@ -138,11 +144,5 @@
   .sub-menu--list {
     padding: 0 0 0 2em;
   }
-  .menu-separator {
-    background: none;
-    border-bottom: 1px dashed var(--color-border);
-  }
-  .menu {
-    border-right: 1px dashed var(--color-border);
-  }
+
 }
