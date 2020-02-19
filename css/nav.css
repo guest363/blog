@@ -116,11 +116,10 @@
   height: 100%;
   overflow: hidden;
 }
-@media screen (min-width: 900px) and (max-width: 1300px) {
+@media (min-width: 900px) and (max-width: 1300px) {
   .sub-menu--list {
     max-width: 150px;
   }
-
 }
 @media screen and (min-width: 1300px) {
   #nav {
@@ -144,5 +143,4 @@
   .sub-menu--list {
     padding: 0 0 0 2em;
   }
-
 }
