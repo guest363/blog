@@ -79,7 +79,6 @@
 .menu--list--logo {
   display: flex;
   align-self: center;
-  height: 70px;
   padding: 0 9px;
   overflow: hidden;
 }
@@ -93,7 +92,8 @@
   fill: black;
   width: 100%;
   box-sizing: border-box;
-  width: 120px;
+  width: 150px;
+  object-fit: cover;
 }
 .menu {
   width: min-content;
