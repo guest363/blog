@@ -90,10 +90,10 @@
 }
 .logo {
   fill: black;
-  width: 100%;
   box-sizing: border-box;
-  width: 150px;
+  width: auto;
   object-fit: cover;
+  height: 150px;
 }
 .menu {
   width: min-content;
