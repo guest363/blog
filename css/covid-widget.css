@@ -1,16 +1,16 @@
 #covid-widget {
-  display: grid;
-  display: -ms-grid;
   max-width: 700px;
   margin: var(--text-side);
   border: 1px solid black;
   padding: var(--text-side);
   border-radius: 5px;
+}
+.covid--grid {
+  display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 #covid-widget h3 {
-  width: 100%;
-  grid-column: 1 / -1;
 }
 .covid--block {
   display: flex;
@@ -22,4 +22,8 @@
 .covid--block--header {
   width: 100%;
   font-weight: bold;
+}
+.covid--image {
+  max-width: 150px;
+  width: 100%;
 }
