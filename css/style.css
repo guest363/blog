@@ -14,6 +14,7 @@ article {
   padding: 0 var(--text-side);
   min-height: 100%;
   max-width: 700px;
+  margin: 0 auto;
 }
 article table {
   display: block;
@@ -27,7 +28,7 @@ article table {
 }
 
 button,
-input[type='button'] {
+input[type="button"] {
   border: none;
   border-radius: 0;
   background: var(--color-accent);
@@ -70,9 +71,7 @@ code.highlighter-rouge {
 }
 .blog {
   padding: 10px 0 0 0;
-  display: flex;
   position: relative;
-  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -146,7 +145,7 @@ td {
 
 @media screen and (min-width: 1300px) {
   body {
-    grid-template-areas: 'nav blog';
+    grid-template-areas: "nav blog";
     grid-template-columns: min-content;
     display: grid;
   }
@@ -158,4 +157,3 @@ td {
     height: 7px;
   }
 }
-
