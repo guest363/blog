@@ -26,9 +26,9 @@
 }
 #covid-widget {
   max-width: 700px;
-  margin: 40px var(--text-side) var(--text-side) var(--text-side);
+  margin: 40px auto;
   border: 2px solid gray;
-  padding: var(--text-side);
+  padding: 1em;
   border-radius: 5px;
   position: relative;
   background-image: url(/assets/images/covid-2.png);
@@ -52,9 +52,10 @@
 .covid--block {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
+  margin: 1em 0;
 }
 .covid--block--header {
   font-size: 0.85em;
@@ -62,7 +63,8 @@
 .covid--block--value {
   width: 100%;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.2em;
+  line-height: 1.2em;
 }
 
 .covid--image {
