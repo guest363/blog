@@ -1,10 +1,16 @@
 :root {
-  --covid-cases: #444444;
+/*   --covid-cases: #444444;
   --covid-todayCases: #fb7b77;
   --covid-deaths: #444444;
   --covid-todayDeaths: #444444;
   --covid-recovered: #62c732;
-  --covid-critical: #6b0000;
+  --covid-critical: #6b0000; */
+  --covid-cases: white;
+  --covid-todayCases: #ffd3d2;
+  --covid-deaths:white;
+  --covid-todayDeaths: white;
+  --covid-recovered: #eaf9e2;
+  --covid-critical: white;
 }
 #covid-cases {
   color: var(--covid-cases);
@@ -28,6 +34,7 @@
   max-width: 700px;
   margin: 40px auto;
   border: 2px solid gray;
+  background-color: gray;
   padding: 1em;
   border-radius: 5px;
   position: relative;
@@ -41,6 +48,7 @@
   width: max-content;
   position: absolute;
   top: -2.3em;
+  color: grey;
 }
 .covid--grid {
   display: grid;
@@ -56,6 +64,7 @@
   flex-wrap: wrap;
   text-align: center;
   margin: 1em 0;
+  color: white;
 }
 .covid--block--header {
   font-size: 0.85em;
