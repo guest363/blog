@@ -34,6 +34,7 @@
   background-image: url(/assets/images/covid-2.png);
   background-repeat: no-repeat;
   background-position: 3% 50%;
+  box-sizing: border-box;
 }
 #covid-widget h3 {
   font-size: 2em;
@@ -44,7 +45,7 @@
 .covid--grid {
   display: grid;
   display: -ms-grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   margin-left: 150px;
 }
 
