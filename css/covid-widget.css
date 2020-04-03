@@ -15,14 +15,14 @@
 #covid-deaths {
   color: var(--covid-deaths);
 }
-#covid-todayCases {
+#covid-todayDeaths {
   color: var(--covid-todayDeaths);
 }
-#covid-todayCases {
+#covid-recovered {
   color: var(--covid-recovered);
 }
 #covid-critical {
-  color: var(--covid-recovered);
+  color: var(--covid-critical);
 }
 #covid-widget {
   max-width: 700px;
