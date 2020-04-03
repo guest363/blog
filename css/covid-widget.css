@@ -35,11 +35,11 @@
   background-repeat: no-repeat;
   background-position: 3% 50%;
 }
-#covid-widget h3{
+#covid-widget h3 {
   font-size: 2em;
-    width: max-content;
-    position: absolute;
-    top: -2.3em;
+  width: max-content;
+  position: absolute;
+  top: -2.3em;
 }
 .covid--grid {
   display: grid;
