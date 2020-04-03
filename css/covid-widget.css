@@ -43,15 +43,7 @@
   background-position: 3% 50%;
   box-sizing: border-box;
 }
-@media screen and (max-width: 600px) {
-  #covid-widget {
-    margin: 40px 1em;
-    background-position: center center;
-  }
-  .covid--grid {
-    margin-left: 0;
-  }
-}
+
 #covid-widget h3 {
   font-size: 2em;
   width: max-content;
@@ -92,4 +84,14 @@
 .covid--image img {
   max-width: 150px;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #covid-widget {
+    margin: 40px 1em;
+    background-position: center center;
+  }
+  .covid--grid {
+    margin-left: 0;
+  }
 }
