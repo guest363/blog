@@ -10,19 +10,25 @@ const URL = " https://coronavirus-19-api.herokuapp.com/countries/";
 "active":3834,
 "critical":8,"casesPerOneMillion":28,"deathsPerOneMillion":0}
  */
+const showTypes = [
+  "cases",
+  "todayCases",
+  "deaths",
+  "todayDeaths",
+  "recovered",
+  "critical"
+];
 const getCountryInfo = async (url, country) => {
   const response = await fetch(url + country);
   return await response.json();
 };
 
 const drawStatistic = async () => {
-  const statistic = await getCountryInfo(URL, "russia");
-  for (let typeOfStatistic in statistic) {
-      console.log(typeOfStatistic)
-      console.log(`covid-${typeOfStatistic}`)
-    const span = document.getElementById(`covid-${typeOfStatistic}`);
-    span.innerHTML = statistic[typeOfStatistic];
-  }
+  const statistic = await getCountryInfo(URL, "Russia");
+  showTypes.forEach(type => {
+    const span = document.getElementById(`covid-${type}`);
+    span.innerHTML = statistic[type];
+  });
 };
 
 drawStatistic();
