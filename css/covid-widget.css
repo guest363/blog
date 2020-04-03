@@ -1,8 +1,28 @@
 :root {
   --covid-cases: #f5a05a;
+  --covid-todayCases: #fc5650;
+  --covid-deaths: #494949;
+  --covid-todayDeaths: #000000;
+  --covid-recovered: #9dee77;
+  --covid-critical: #994646;
 }
 #covid-cases {
   color: var(--covid-cases);
+}
+#covid-todayCases {
+  color: var(--covid-todayCases);
+}
+#covid-deaths {
+  color: var(--covid-deaths);
+}
+#covid-todayCases {
+  color: var(--covid-todayDeaths);
+}
+#covid-todayCases {
+  color: var(--covid-recovered);
+}
+#covid-critical {
+  color: var(--covid-recovered);
 }
 #covid-widget {
   max-width: 700px;
@@ -26,13 +46,18 @@
   text-align: center;
 }
 .covid--block--header {
-  width: 100%;
+  font-size: 0.85em;
 }
 .covid--block--value {
+  width: 100%;
   font-weight: bold;
   font-size: 2em;
 }
 
+.covid--image {
+  display: none;
+  position: absolute;
+}
 .covid--image img {
   max-width: 150px;
   width: 100%;
