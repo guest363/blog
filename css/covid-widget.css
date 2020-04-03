@@ -31,7 +31,7 @@
   padding: var(--text-side);
   border-radius: 5px;
   position: relative;
-  background-image: url(/assets/images/covid.png);
+  background-image: url(/assets/images/covid-2.png);
 }
 .covid--grid {
   display: grid;
