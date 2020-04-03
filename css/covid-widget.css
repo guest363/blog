@@ -6,10 +6,11 @@
   border: 1px solid black;
   padding: var(--text-side);
   border-radius: 5px;
-  grid-template-columns: 1fr repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 #covid-widget h3 {
   width: 100%;
+  grid-column: 1 / -1;
 }
 .covid--block {
   display: flex;
