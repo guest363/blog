@@ -1,5 +1,5 @@
 :root {
-/*   --covid-cases: #444444;
+  /*   --covid-cases: #444444;
   --covid-todayCases: #fb7b77;
   --covid-deaths: #444444;
   --covid-todayDeaths: #444444;
@@ -7,7 +7,7 @@
   --covid-critical: #6b0000; */
   --covid-cases: white;
   --covid-todayCases: #ffd3d2;
-  --covid-deaths:white;
+  --covid-deaths: white;
   --covid-todayDeaths: white;
   --covid-recovered: #eaf9e2;
   --covid-critical: white;
@@ -42,6 +42,15 @@
   background-repeat: no-repeat;
   background-position: 3% 50%;
   box-sizing: border-box;
+}
+@media screen and (min-width: 700px) {
+  #covid-widget {
+    margin: 40px 1em;
+    background-position: center center;
+  }
+  .covid--grid {
+    margin: 0;
+  }
 }
 #covid-widget h3 {
   font-size: 2em;
