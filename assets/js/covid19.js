@@ -18,6 +18,8 @@ const getCountryInfo = async (url, country) => {
 const drawStatistic = async () => {
   const statistic = await getCountryInfo(URL, "russia");
   for (let typeOfStatistic in statistic) {
+      console.log(typeOfStatistic)
+      console.log(`covid-${typeOfStatistic}`)
     const span = document.getElementById(`covid-${typeOfStatistic}`);
     span.innerHTML = statistic[typeOfStatistic];
   }
