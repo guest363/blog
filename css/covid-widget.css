@@ -1,10 +1,4 @@
 :root {
-  /*   --covid-cases: #444444;
-  --covid-todayCases: #fb7b77;
-  --covid-deaths: #444444;
-  --covid-todayDeaths: #444444;
-  --covid-recovered: #62c732;
-  --covid-critical: #6b0000; */
   --covid-cases: white;
   --covid-todayCases: #ffd3d2;
   --covid-deaths: white;
