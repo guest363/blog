@@ -1,7 +1,12 @@
 <a
-  href="https://telegram.me/share/url?url={{ page.url | prepend:site.baseurl }}
+  href="https://telegram.me/share/url?url={{ page.url | prepend: site.baseurl }}
   &text='Заметка: {{page.title}}. Категории {{page.categories}}.'"
   class="icons"
 >
-  <img src="/assets/icons/telegram.svg" alt="Телеграмм" srcset="" />
+  <img
+    class="icons--img"
+    src="/assets/icons/telegram.svg"
+    alt="Телеграмм"
+    srcset=""
+  />
 </a>

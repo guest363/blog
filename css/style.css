@@ -74,7 +74,7 @@ code.highlighter-rouge {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  display: flex;
 }
 @media screen and (min-width: 900px) {
   .blog {
@@ -159,6 +159,9 @@ td {
 }
 
 .icons {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
+}
+.icons--img {
+  width: 100%;
 }
