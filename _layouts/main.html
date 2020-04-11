@@ -5,10 +5,9 @@
     {% include header.html %} {% include hamburger.html %} {% include nav.html
     %}
     <div class="blog">
-      <!-- Виджет covid-19 -->
-      {% include covid-widget.html %}
       <article>
-        {{ content }}
+        <!-- Виджет covid-19 -->
+        {% include covid-widget.html %} {{ content }}
       </article>
     </div>
     <br /><br />
