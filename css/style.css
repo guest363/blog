@@ -159,9 +159,12 @@ td {
   }
 }
 
-.icons, .icons--img{
+.icons,
+.icons--img {
   width: 1.5em !important;
   height: 1.5em !important;
+}
+.icons--img {
   margin: 0 2em;
 }
 .share {
