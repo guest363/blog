@@ -1,14 +1,16 @@
 const shareButton = document.getElementById('share');
 const shareText = shareButton.getAttribute('data-shareText');
 const shareUrl = shareButton.getAttribute('href');
-shareButton.addEventListener('click', function () {
+shareButton.addEventListener('click', async () => {
     if (navigator.share) {
-        navigator.share({
-            title: 'Блог Owl-shaker',
-            text: shareText,
-            url: shareUrl
-        }).then(() => {
-
-        })
+        try {
+            await navigator.share({
+                title: 'Блог Owl-shaker',
+                text: shareText,
+                url: shareUrl
+            })
+        } catch (e) {
+            console.error(e)
+        }
     }
 }

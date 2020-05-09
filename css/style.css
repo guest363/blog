@@ -168,6 +168,10 @@ td {
   margin: 0 2em;
 }
 .share {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media only screen and (width : 1024px) {
+  .share {
+    display: block;
+  }
 }
