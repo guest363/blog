@@ -15,9 +15,10 @@ tag: Web
 
 ## Install
 
-```shell script
+```shell
 npm install --save-dev webpack, webpack-dev-server, html-webpack-plugin, vue-loader, file-loader, style-loader, css-loader, vue-style-loader, less-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin, @babel/core @babel/cli @babel/preset-env, browserslist, cssnano
 ```
+
 ## webpack.dev.js
 
 Опция **cheap-module-eval-source-map** - Similar to eval-cheap-source-map, however, in this case Source Maps from Loaders are processed for better results. However Loader Source Maps are simplified to a single mapping per line.
