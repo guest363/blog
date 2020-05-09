@@ -170,7 +170,7 @@ td {
 .share {
   display: none;
 }
-@media only screen and (max-width : 1024px) {
+@media screen and (max-width : 1024px) {
   .share {
     display: block;
   }
