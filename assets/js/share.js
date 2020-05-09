@@ -1,6 +1,6 @@
 const shareButton = document.getElementById('share');
 const shareText = shareButton.getAttribute('data-shareText');
-const shareUrl = shareButton.getAttribute('href');
+const shareUrl = shareButton.getAttribute('data-href');
 shareButton.addEventListener('click', async () => {
     if (navigator.share) {
         try {
