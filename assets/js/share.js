@@ -13,4 +13,4 @@ shareButton.addEventListener('click', async () => {
             console.error(e)
         }
     }
-}
+});
