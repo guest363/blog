@@ -16,7 +16,8 @@ tag: Web
 ## Install
 
 ```shell
-npm install --save-dev webpack, webpack-dev-server, html-webpack-plugin, vue-loader, file-loader, style-loader, css-loader, vue-style-loader, less-loader, mini-css-extract-plugin, optimize-css-assets-webpack-plugin, @babel/core @babel/cli @babel/preset-env, browserslist, cssnano
+npm install --save-dev webpack webpack-dev-server webpack-cli html-webpack-plugin vue-loader file-loader style-loader css-loader vue-style-loader less-loader mini-css-extract-plugin
+ optimize-css-assets-webpack-plugin @babel/core @babel/cli @babel/preset-env browserslist cssnano
 ```
 
 ## webpack.dev.js
