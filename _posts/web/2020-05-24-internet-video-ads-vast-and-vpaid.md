@@ -24,9 +24,6 @@ tag: Web
 Рекламный видеоролик размещен в середине текстовой статьи. При прокручивании страницы, как только видеоплеер попадает в зону видимости пользователя, начинается автоматический показ рекламного видеоролика.
 
 Места размещения: информационные сайты, новостные порталы, развлекательные сайты.
-## Библиотеки для js
-
-[Отличный парсер и треккер для VAST](https://github.com/dailymotion/vast-client-js)
 
 ## VAST
 
@@ -55,8 +52,11 @@ unit is unable to display and/or send AdLoaded, then AdError should be dispatche
 - VPAID JS
 
 ![Пример контента VPAID](/assets/images/vastAndVpaid/vpaid-types.jpg)
-## Тестирование VAST и VPAID компаний
-[От bluebillywig](https://support.bluebillywig.com/vast-inspector)
+
+## Полезные ссылки
+- Детектор Ad Block от iabtechlab [github](https://github.com/InteractiveAdvertisingBureau/AdBlockDetection)
+- Тестирование VAST и VPAID компаний от [bluebillywig](https://support.bluebillywig.com/vast-inspector)
+- Отличный парсер и треккер для VAST [github](https://github.com/dailymotion/vast-client-js)
 
 ## Почитать дополнительно
 
