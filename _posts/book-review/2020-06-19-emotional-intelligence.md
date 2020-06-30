@@ -2,11 +2,11 @@
 layout: book-review
 title: Эмоциональный интеллект ребенка
 date:   2020-0629
-categories: ["Дети"]
+categories: [Дети]
 tag: Рецензия
 cover: '/assets/images/children/emotional-intelligence-face.png'
 author: Джон Готтман и Джоан Деклер
-themes: "Дети", "Саморазвитие"
+themes: "Дети, cаморазвитие, педагогика"
 size: 257
 mark: 7 из 10
 link: https://www.mann-ivanov-ferber.ru/books/emocionalnyj_intellekt_dlya_detej/
