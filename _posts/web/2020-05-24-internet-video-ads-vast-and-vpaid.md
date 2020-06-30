@@ -51,6 +51,21 @@ unit is unable to display and/or send AdLoaded, then AdError should be dispatche
 - VPAID Flash 
 - VPAID JS
 
+### initAd
+- width: indicates the available ad display area width in pixels
+- height: indicates the available ad display area height in pixels
+- viewMode: indicates either “normal”, “thumbnail”, or “fullscreen” as the view mode
+     for the video player as defined by the publisher. Default is “normal”.
+- desiredBitrate: indicates the desired bitrate as number for kilobits per second
+     (kbps). The ad unit may use this information to select appropriate bitrate for any
+     streaming content.
+- creativeData: (optional) used for additional initialization data. In a VAST context,
+     the ad unit should pass the value for either the Linear or Nonlinear AdParameter
+     element specified in the VAST document.
+- environmentVars: (optional) used for passing implementation-specific runtime
+     variables. Refer to the language specific API description for more details.
+     
+
 ![Пример контента VPAID](/assets/images/vastAndVpaid/vpaid-types.jpg)
 
 ## Полезные ссылки
