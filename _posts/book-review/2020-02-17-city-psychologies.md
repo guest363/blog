@@ -18,7 +18,7 @@ link: "https://www.mann-ivanov-ferber.ru/books/psixologiya-goroda/"
 
 Показательна история о крутом дизайнерском проекте на создателя которого подал в суд заказчик. Дом был полностью просматривается и хоть он находился в отдалении от других людей это вызывало дискомфорт у владелицы.
 
-![Дом Фарнсуорт в Иллинойсе.](/assets/images/psichology-in-city--fransuort.png)
+![Дом Фарнсуорт в Иллинойсе.](/assets/images/psichology-in-city--fransuort.jpg)
 **Дом Фарнсуорт в Иллинойсе**
 
 При этом мужчинам нравится чуть больший размер окон, большая панорамность.
@@ -85,7 +85,7 @@ link: "https://www.mann-ivanov-ferber.ru/books/psixologiya-goroda/"
 
 Пример хорошей организации малоэтажного строительства.
 
-![Поселок Хуфайзен](/assets/images/psichology-in-city--hufizen1.png)
+![Поселок Хуфайзен](/assets/images/psichology-in-city--hufizen1.jpg)
 **Поселок Хуфайзен**
 
 ## Многоэтажное жилье

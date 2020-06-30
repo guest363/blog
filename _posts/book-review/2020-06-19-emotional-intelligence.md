@@ -1,15 +1,15 @@
 ---
 layout: book-review
 title: Эмоциональный интеллект ребенка
-date:   2020-06-29
+date: 2020-06-29
 categories: [Дети]
 tag: Рецензия
-cover: '/assets/images/children/emotional-intelligence-face.png'
-author: 'Джон Готтман и Джоан Деклер'
+cover: "/assets/images/children/emotional-intelligence-face.png"
+author: "Джон Готтман и Джоан Деклер"
 themes: "Дети, cаморазвитие, педагогика"
-size: '257'
-mark: '7 из 10'
-link: 'https://www.mann-ivanov-ferber.ru/books/emocionalnyj_intellekt_dlya_detej/'
+size: "257"
+mark: "7 из 10"
+link: "https://www.mann-ivanov-ferber.ru/books/emocionalnyj_intellekt_dlya_detej/"
 ---
 
 И так, первая книга про эмоциональный интеллект которую прочёл.
@@ -55,7 +55,7 @@ link: 'https://www.mann-ivanov-ferber.ru/books/emocionalnyj_intellekt_dlya_detej
 - Задавать открытые вопросы по поводу эмоций. Что ты почувствовала когда это случилось ?
 - Заверить ребенка, что любая эмоция это нормально.
 
-![Дневник эмоций](/assets/images/children/emotional-intelligence-face.png)
+![Дневник эмоций](/assets/images/children/emotional-intelligence-helper.png)
 
 ## Любая эмоция допустима
 
