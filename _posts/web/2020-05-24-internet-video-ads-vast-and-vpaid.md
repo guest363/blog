@@ -27,24 +27,67 @@ tag: Web
 
 ## VAST
 
+XML файл специальной разметки. В нем указывается:
+- Ссылки на рекламные креативы
+- Ссылки которые нужно трекать get запросом при наступлении различных событий. Например начало просмотро ролика, клик по рекламе.
+- Ссылки которые нужно трекать в случае ошибки
+- Ссылки на другие рекламные компании, т.е. другой VAST. VAST может вкладываться один в другой.
+- Различные параметры рекламной компании, такие как кто ее создатель, цена и так далее.
+
+```XML
+<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Ad id="20001">
+        <InLine>
+            <AdSystem version="4.0">iabtechlab</AdSystem>
+            <AdTitle>iabtechlab video ad</AdTitle>
+            <Pricing model="cpm" currency="USD">
+                <![CDATA[ 25.00 ]]>
+            </Pricing>
+            <Error>http://example.com/error</Error>
+            <Impression id="Impression-ID">http://example.com/track/impression</Impression>
+            <Creatives>
+                <Creative id="5480" sequence="1">
+                    <Linear>
+                        <Duration>00:00:16</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start">http://example.com/tracking/start</Tracking>
+                            <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
+                            <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
+                            <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
+                            <Tracking event="complete">http://example.com/tracking/complete</Tracking>
+                            <Tracking event="progress" offset="00:00:10">http://example.com/tracking/progress-10</Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough id="blog">
+                                <![CDATA[https://iabtechlab.com]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VAST">
+                                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+
+
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="iab-Count">
+                    <total_available>
+                        <![CDATA[ 2 ]]>
+                    </total_available>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
+```
+
 [Примеры от aib](https://github.com/InteractiveAdvertisingBureau/VAST_Samples/tree/master/VAST%203.0%20Samples)
 
 ## VPAID
-By enabling and allowing tracking of a certain set of events, VPAID lets users to:
-
-Click on different tabs of the ad to view info
-Expand the overall view of the video ad
-Fill out a form embedded in the ad
-Take a survey embedded in the ad
-Interact with ad elements or even play a game
-
-
-When the video player calls the initAd() method, the ad unit can begin loading assets.
-Once loaded and ready for display, the ad dispatches the AdLoaded event. No UI elements
-should be visible before AdLoaded is sent, but sending AdLoaded indicates that the ad
-unit has verified that all files are ready to execute. Also, if initAd() was called, and the ad
-unit is unable to display and/or send AdLoaded, then AdError should be dispatched.
-
+В VAST в качестве медиафайлов могут быть js и swf ролики. Так вот VPAID это стандарт описания методов, событий
 
 Типы VPAID контента: 
 
