@@ -201,6 +201,7 @@ script.addEventListener("load", function () {
 - subscribe: (fn: Function, event: String, listenerScope?: Object) => void;
 - unsubscribe: (fn: Function, event: String) => void;
 
+#### Пример контента VPAID
 ![Пример контента VPAID](/assets/images/vastAndVpaid/vpaid-types.jpg)
 
 ## Полезные ссылки
@@ -214,4 +215,4 @@ script.addEventListener("load", function () {
 - Доступно про состав VAST, Хабр. [Видеореклама под капотом: что такое VAST?](https://habr.com/ru/post/499164/)
 - Как написать простенький кастомный плеер, Хабр. [Как сделать собственный видео-плеер на HTML5 Video](https://habr.com/ru/company/microsoft/blog/127295/)
 - Еще одна реализация плеера html5 от MDN, en. [Creating a cross-browser video player](https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player)
-- Можно узнать про временные метки (timestamp). [10 Advanced Features In The HTML5 <video> Player](https://blog.addpipe.com/10-advanced-features-in-html5-video-player/amp/)
+- Можно узнать про временные метки (timestamp). [10 Advanced Features In The HTML5 video Player](https://blog.addpipe.com/10-advanced-features-in-html5-video-player/amp/)
