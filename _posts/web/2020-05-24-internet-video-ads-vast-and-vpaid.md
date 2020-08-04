@@ -5,22 +5,27 @@ date: 2020-05-24 13:45:33 +0500
 categories: Разработка
 tag: Web
 ---
+
 ## Стандарты
+
 - [VAST 3](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/)
 - [VPAID 2](https://www.iab.com/guidelines/digital-video-player-ad-interface-definition-vpaid-2-0/)
 
 ## Типы видео рекламы
 
 ### In-stream (in-video)
-Реклама, которая транслируются в видеоролике. 
+
+Реклама, которая транслируются в видеоролике.
 Может находится в следующих позициях:
-- *Pre-roll* - запускается перед началом видеоролика при нажатии на кнопку воспроизведения
-- *Mid-roll* - запускается автоматически спустя определенное время со старта видеоролика
-- *Post-roll* - запускается автоматически после окончания видеоролика
-- *Pause-roll* - запускается при снятии видеоролика с паузы
-- *Over-roll*- запускается автоматически поверх видеоролика
+
+- _Pre-roll_ - запускается перед началом видеоролика при нажатии на кнопку воспроизведения
+- _Mid-roll_ - запускается автоматически спустя определенное время со старта видеоролика
+- _Post-roll_ - запускается автоматически после окончания видеоролика
+- _Pause-roll_ - запускается при снятии видеоролика с паузы
+- _Over-roll_- запускается автоматически поверх видеоролика
 
 ### Out-stream (in-content)
+
 Рекламный видеоролик размещен в середине текстовой статьи. При прокручивании страницы, как только видеоплеер попадает в зону видимости пользователя, начинается автоматический показ рекламного видеоролика.
 
 Места размещения: информационные сайты, новостные порталы, развлекательные сайты.
@@ -28,6 +33,7 @@ tag: Web
 ## VAST
 
 XML файл специальной разметки. В нем указывается:
+
 - Ссылки на рекламные креативы
 - Ссылки которые нужно трекать get запросом при наступлении различных событий. Например начало просмотро ролика, клик по рекламе.
 - Ссылки которые нужно трекать в случае ошибки
@@ -87,31 +93,118 @@ XML файл специальной разметки. В нем указывае
 [Примеры от aib](https://github.com/InteractiveAdvertisingBureau/VAST_Samples/tree/master/VAST%203.0%20Samples)
 
 ## VPAID
-В VAST в качестве медиафайлов могут быть js и swf ролики. Так вот VPAID это стандарт описания методов, событий
 
-Типы VPAID контента: 
+В VAST в качестве медиафайлов могут быть js и swf ролики. Так вот VPAID это стандарт описывющий методы и событий и которые должен поддерживать передаваемый код.
 
-- VPAID Flash 
-- VPAID JS
+Типы VPAID контента:
 
-### initAd
-- width: indicates the available ad display area width in pixels
-- height: indicates the available ad display area height in pixels
-- viewMode: indicates either “normal”, “thumbnail”, or “fullscreen” as the view mode
-     for the video player as defined by the publisher. Default is “normal”.
-- desiredBitrate: indicates the desired bitrate as number for kilobits per second
-     (kbps). The ad unit may use this information to select appropriate bitrate for any
-     streaming content.
-- creativeData: (optional) used for additional initialization data. In a VAST context,
-     the ad unit should pass the value for either the Linear or Nonlinear AdParameter
-     element specified in the VAST document.
-- environmentVars: (optional) used for passing implementation-specific runtime
-     variables. Refer to the language specific API description for more details.
-     
+- VPAID Flash
+- VPAID JS - на момент 2020 актуальным остался только js формат.
+
+### Как взаимодействовть
+
+```js
+// AIB рекомендует добавлять код через iframe
+const iframe: HTMLIFrameElement = document.createElement("iframe");
+iframe.setAttribute(
+  "style",
+  "border:0px;margin:0px;opacity:1;padding:0px;height:0;position:absolute;width:0;top:0;left:0;"
+);
+container.appendChild(iframe);
+iframe.contentWindow?.document.write(
+  `<head><style>body{margin:0}</style></head><body><script type="text/javascript" class="${randomizer}" src="${url}" async></script></body>`
+);
+const script = iframe.contentWindow?.document.querySelector(`.${randomizer}`);
+
+/**
+ * Проверяет в рантайме поддерживает ли принятый VPAID все требуемые методы.
+ * Скрипт написан AIB
+ */
+const checkSpec = (VPAIDCreative: currectVPAID): Boolean => {
+  if (
+    VPAIDCreative.handshakeVersion &&
+    typeof VPAIDCreative.handshakeVersion == "function" &&
+    VPAIDCreative.initAd &&
+    typeof VPAIDCreative.initAd == "function" &&
+    VPAIDCreative.startAd &&
+    typeof VPAIDCreative.startAd == "function" &&
+    VPAIDCreative.stopAd &&
+    typeof VPAIDCreative.stopAd == "function" &&
+    VPAIDCreative.skipAd &&
+    typeof VPAIDCreative.skipAd == "function" &&
+    VPAIDCreative.resizeAd &&
+    typeof VPAIDCreative.resizeAd == "function" &&
+    VPAIDCreative.pauseAd &&
+    typeof VPAIDCreative.pauseAd == "function" &&
+    VPAIDCreative.resumeAd &&
+    typeof VPAIDCreative.resumeAd == "function" &&
+    VPAIDCreative.expandAd &&
+    typeof VPAIDCreative.expandAd == "function" &&
+    VPAIDCreative.collapseAd &&
+    typeof VPAIDCreative.collapseAd == "function" &&
+    VPAIDCreative.subscribe &&
+    typeof VPAIDCreative.subscribe == "function" &&
+    VPAIDCreative.unsubscribe &&
+    typeof VPAIDCreative.unsubscribe == "function"
+  ) {
+    return true;
+  }
+  return false;
+};
+
+script.addEventListener("load", function () {
+  // Доступ к VPAID коду
+  const adUnit = iframe.contentWindow.getVPAIDAd();
+  // Проверка корректности VPAID
+  if (!checkSpec(adUnit)) {
+    return;
+  }
+  // Обмен версиями
+  adUnit.handshakeVersion("2.0");
+  // Инициализировать
+  adUnit.initAd(
+    width,
+    height,
+    "normal", //  “normal” “thumbnail” or “fullscreen”
+    -1,
+    // Для отправки креативу информации необходимой для старта, передается в VAST
+    { AdParameters: adParameters }, 
+    {
+      slot: wrapper, // над каким блоком vpaid получит контроль
+      videoSlot: video, // video html elem
+      videoSlotCanAutoPlay: true,
+    }
+  );
+});
+```
+
+### Методы VPAID:
+
+- getVPAIDAd: () => Object;
+  handshakeVersion: (playerVPAIDVersion: String) => String;
+  initAd: (
+  width: Number,
+  height: Number,
+  viewMode: String,
+  desiredBitrate: Number,
+  creativeData?: Object,
+  environmentVars?: environmentVars
+  ) => void;
+- resizeAd: (width: Number, height: Number, viewMode: String) => void;
+- startAd: () => void;
+- stopAd: () => void;
+- pauseAd: () => void;
+- resumeAd: () => void;
+- expandAd: () => void;
+- collapseAd: () => void;
+- skipAd: () => void;
+- subscribe: (fn: Function, event: String, listenerScope?: Object) => void;
+- unsubscribe: (fn: Function, event: String) => void;
 
 ![Пример контента VPAID](/assets/images/vastAndVpaid/vpaid-types.jpg)
 
 ## Полезные ссылки
+
 - Детектор Ad Block от iabtechlab [github](https://github.com/InteractiveAdvertisingBureau/AdBlockDetection)
 - Тестирование VAST и VPAID компаний от [bluebillywig](https://support.bluebillywig.com/vast-inspector)
 - Отличный парсер и треккер для VAST [github](https://github.com/dailymotion/vast-client-js)
