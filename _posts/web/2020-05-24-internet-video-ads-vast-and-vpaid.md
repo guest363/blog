@@ -1,100 +1,103 @@
 ---
 layout: post
 title: Видеореклама в интернете. VAST и VPAID.
-date: 2020-05-24 13:45:33 +0500
+date: 2020-12-25 13:45:33 +0500
 categories: Разработка
 tag: Web
 ---
 
 ## Стандарты
 
-- [VAST 3](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-3-0/)
+- [VAST](https://iabtechlab.com/standards/vast/)
 - [VPAID 2](https://www.iab.com/guidelines/digital-video-player-ad-interface-definition-vpaid-2-0/)
+
+Разработкой стандартов занмается компания IAB, [рускоязычная версия сайта](https://iabrus.ru/).
 
 ## Типы видео рекламы
 
 ### In-stream (in-video)
 
 Реклама, которая транслируются в видеоролике.
-Может находится в следующих позициях:
-
-- _Pre-roll_ - запускается перед началом видеоролика при нажатии на кнопку воспроизведения
-- _Mid-roll_ - запускается автоматически спустя определенное время со старта видеоролика
-- _Post-roll_ - запускается автоматически после окончания видеоролика
-- _Pause-roll_ - запускается при снятии видеоролика с паузы
-- _Over-roll_- запускается автоматически поверх видеоролика
-
+Может находится в любом месте ролика. Может отыгрываться паралельно с роликом. Суть в том, что реклама отображается в целевом для пользователя ролике. Как правило такую рекламу можно скипать, сразу или по прошествии определенного времени.
 ### Out-stream (in-content)
 
-Рекламный видеоролик размещен в середине текстовой статьи. При прокручивании страницы, как только видеоплеер попадает в зону видимости пользователя, начинается автоматический показ рекламного видеоролика.
-
-Места размещения: информационные сайты, новостные порталы, развлекательные сайты.
+Рекламный видеоролик размещается, как правило, в текстовых статьях, но суть в том, что данная реклама не мешает просмотру целевого контента. При прокручивании страницы, как только видеоплеер попадает в зону видимости пользователя, начинается автоматический показ рекламного видеоролика. Ролик играет без звука.
 
 ## VAST
 
-XML файл специальной разметки. В нем указывается:
+Это XML файл специальной разметки. Нужен чтобы рекламный плеер понимал откуда брать ролики, какие события отстукивать, чьи ролики и так далее.
 
-- Ссылки на рекламные креативы
-- Ссылки которые нужно трекать get запросом при наступлении различных событий. Например начало просмотро ролика, клик по рекламе.
-- Ссылки которые нужно трекать в случае ошибки
-- Ссылки на другие рекламные компании, т.е. другой VAST. VAST может вкладываться один в другой.
-- Различные параметры рекламной компании, такие как кто ее создатель, цена и так далее.
+На момент конца 2020 последним является стандар VAST 4.2. 
+
+Из интересного, сравнивая с VAST 3:
+- В стандарт добвлено множество макросов;
+- Деприкейтнуты jwf VPAID креативы.
+
+Версии VAST практически полностью обратно совместимы. В новых версиях может деприкейтнуться какое-то свойство, но оно остается в стандарте, просто с пометкой.
+
+В VAST xml файле в общем указывается:
+
+- Ссылки на рекламные компании. Может содержать несколько рекламных компаний;
+- Ссылки которые нужно трекать get запросом при наступлении различных событий. Например начало просмотро ролика, клик по рекламе;
+- Ссылку которую нужно трекать в случае ошибки;
+- Ссылки на другие рекламные компании, т.е. другой VAST. VAST может вкладываться один в другой;
+- Различные параметры рекламной компании, такие как кто ее создатель, цена и так далее;
+- Медиафайлы рекламной компании.
 
 ```XML
-<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <Ad id="20001">
-        <InLine>
-            <AdSystem version="4.0">iabtechlab</AdSystem>
-            <AdTitle>iabtechlab video ad</AdTitle>
-            <Pricing model="cpm" currency="USD">
-                <![CDATA[ 25.00 ]]>
-            </Pricing>
-            <Error>http://example.com/error</Error>
-            <Impression id="Impression-ID">http://example.com/track/impression</Impression>
-            <Creatives>
-                <Creative id="5480" sequence="1">
-                    <Linear>
-                        <Duration>00:00:16</Duration>
-                        <TrackingEvents>
-                            <Tracking event="start">http://example.com/tracking/start</Tracking>
-                            <Tracking event="firstQuartile">http://example.com/tracking/firstQuartile</Tracking>
-                            <Tracking event="midpoint">http://example.com/tracking/midpoint</Tracking>
-                            <Tracking event="thirdQuartile">http://example.com/tracking/thirdQuartile</Tracking>
-                            <Tracking event="complete">http://example.com/tracking/complete</Tracking>
-                            <Tracking event="progress" offset="00:00:10">http://example.com/tracking/progress-10</Tracking>
-                        </TrackingEvents>
-                        <VideoClicks>
-                            <ClickThrough id="blog">
-                                <![CDATA[https://iabtechlab.com]]>
-                            </ClickThrough>
-                        </VideoClicks>
-                        <MediaFiles>
-                            <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="500" width="400" height="300" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0" apiFramework="VAST">
-                                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4]]>
-                            </MediaFile>
-                        </MediaFiles>
-
-
-                    </Linear>
-                </Creative>
-            </Creatives>
-            <Extensions>
-                <Extension type="iab-Count">
-                    <total_available>
-                        <![CDATA[ 2 ]]>
-                    </total_available>
-                </Extension>
-            </Extensions>
-        </InLine>
-    </Ad>
+<VAST version="4.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
+  <Ad id="20001" >
+    <InLine>
+      <AdSystem version="1">iabtechlab</AdSystem>
+      <Error><![CDATA[https://example.com/error]]></Error>
+      <Impression id="Impression-ID"><![CDATA[https://example.com/track/impression]]></Impression>
+      <Pricing model="cpm" currency="USD">
+        <![CDATA[ 25.00 ]]>
+      </Pricing>
+      <AdServingId>a532d16d-4d7f-4440-bd29-2ec0e693fc80</AdServingId>
+      <AdTitle>iabtechlab video ad</AdTitle>
+      <Creatives>
+        <Creative id="5480" sequence="1" adId="2447226">
+          <Linear>
+            <TrackingEvents>
+              <Tracking event="start" ><![CDATA[https://example.com/tracking/start]]></Tracking>
+              <Tracking event="progress" offset="00:00:10"><![CDATA[http://example.com/tracking/progress-10]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://example.com/tracking/firstQuartile]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://example.com/tracking/midpoint]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://example.com/tracking/thirdQuartile]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://example.com/tracking/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:16</Duration>
+            <MediaFiles>
+              <MediaFile id="5241" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="H.264">
+                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro.mp4]]>
+              </MediaFile>
+              <MediaFile id="5244" delivery="progressive" type="video/mp4" bitrate="1000" width="854" height="480" minBitrate="700" maxBitrate="1500" scalable="1" maintainAspectRatio="1" codec="H.264">
+                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-mid-resolution.mp4]]>
+              </MediaFile>
+              <MediaFile id="5246" delivery="progressive" type="video/mp4" bitrate="600" width="640" height="360" minBitrate="500" maxBitrate="700" scalable="1" maintainAspectRatio="1" codec="H.264">
+                <![CDATA[https://iab-publicfiles.s3.amazonaws.com/vast/VAST-4.0-Short-Intro-low-resolution.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough id="blog">
+                <![CDATA[https://iabtechlab.com]]>
+              </ClickThrough>
+            </VideoClicks>
+          </Linear>
+          <UniversalAdId idRegistry="Ad-ID">8465</UniversalAdId>
+          <UniversalAdId idRegistry="Ad-ID2">AA8465</UniversalAdId>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
 </VAST>
 ```
 
-[Примеры от aib](https://github.com/InteractiveAdvertisingBureau/VAST_Samples/tree/master/VAST%203.0%20Samples)
 
 ## VPAID
 
-В VAST в качестве медиафайлов могут быть js и swf ролики. Так вот VPAID это стандарт описывющий методы и событий и которые должен поддерживать передаваемый код.
+В VAST в качестве медиафайлов могут быть js и swf(в VAST 4 деприкейтнуты) ролики. Так вот VPAID это стандарт описывющий методы и событий и которые должен поддерживать передаваемый код.
 
 Типы VPAID контента:
 
