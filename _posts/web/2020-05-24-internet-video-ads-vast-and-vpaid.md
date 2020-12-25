@@ -208,7 +208,9 @@ script.addEventListener("load", function () {
 
 - Детектор Ad Block от iabtechlab [github](https://github.com/InteractiveAdvertisingBureau/AdBlockDetection)
 - Тестирование VAST и VPAID компаний от [bluebillywig](https://support.bluebillywig.com/vast-inspector)
-- Отличный парсер и треккер для VAST [github](https://github.com/dailymotion/vast-client-js)
+- Отличный парсер и треккер для VAST [github](https://github.com/dailymotion/
+vast-client-js)
+- Множество примеров VAST от IAB [github](https://github.com/InteractiveAdvertisingBureau/VAST_Samples)
 
 ## Почитать дополнительно
 
