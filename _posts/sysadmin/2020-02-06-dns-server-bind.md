@@ -23,9 +23,9 @@ DNS сервера BIND (Berkeley Internet Name Domain, ранее: Berkeley Int
 
 Версия BIND 9 была последней, с 10-й версии права передают сообществу, и называется Bundy.
 
-Устанавливается для Debian подобных ОС `sudo apt install bind9`. Чобы посмотреть пакеты нужные для работы bind9 `apt cache searche bind9`
+Устанавливается для Debian подобных ОС `sudo apt install bind9`. Чобы посмотреть пакеты нужные для работы bind9 `apt cache search bind9`
 
-![apt cache searche bind9](/assets/images/bind--apt-cache.png)
+![apt cache search bind9](/assets/images/bind--apt-cache.png)
 
 ## Структура DNS
 
