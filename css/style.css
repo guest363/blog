@@ -17,6 +17,9 @@ article {
   margin: 0 auto;
   margin-bottom: 2em;
 }
+article:fist-child {
+  margin-top: 0 !important;
+}
 article p {
   line-height: 1.55em;
   margin-bottom: 1.4em;
