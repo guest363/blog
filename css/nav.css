@@ -3,6 +3,7 @@
 }
 #nav {
   width: 100vw;
+  background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 1px 0 0 var(--color-border);
   position: fixed;
@@ -11,19 +12,18 @@
   left: 0;
   z-index: 2;
   display: flex;
-  padding: 10px 20px;
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
 }
-@supports (
+/* @supports (
   (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
 ) {
   #nav {
     backdrop-filter: blur(15px);
     background: transparent;
   }
-}
+} */
 #nav a {
   text-decoration: none;
   color: black;
