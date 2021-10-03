@@ -17,12 +17,50 @@ article {
   margin: 0 auto;
   margin-bottom: 2em;
 }
+article p {
+  line-height: 1.55em;
+  margin-bottom: 1.4em;
+}
+h1,
+h2,
+h3 {
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: calc(1.625rem + 1.6vw);
+}
+h2 {
+  font-size: calc(1.5rem + 0.25vw);
+}
+h3 {
+  font-size: calc(1.125rem + 0.25vw);
+}
+
+blockquote:not(.pull-quote) {
+  font-style: italic;
+  padding: 1em calc(1.5em + 0.5vw);
+  color: #424242;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.05em;
+  line-height: 1.65em;
+  letter-spacing: 0;
+  border-radius: 11px;
+  background: linear-gradient(to bottom right, #f5f2f0e3 0, #fff 100%);
+}
+
 article table {
   display: block;
   overflow: scroll;
   scrollbar-width: thin;
 }
 .blog img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+.book-cover {
   object-fit: contain;
   width: 100%;
   height: 350px;
@@ -170,7 +208,7 @@ td {
 .share {
   display: none;
 }
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
   .share {
     display: block;
   }
