@@ -1,16 +1,17 @@
 ---
 layout: post
 title: DNS сервер на примере BIND
-date:   2020-02-06 17:45:33 +0500
+date: 2020-02-06 17:45:33 +0500
 categories: Разработка
 tag: Linux
 ---
-![Mind map по DNS](/assets/images/dns--map-1--web--low.png)
-<a href="/assets/images/dns--map-1--download.png" download>
-  Скачать в полном размере
-</a>
 
 # DNS сервер BIND
+
+![Mind map по DNS](/assets/images/dns--map-1--web--low.png)
+<a href="/assets/images/dns--map-1--download.png" download>
+Скачать в полном размере
+</a>
 
 ## DNS как служба
 
@@ -216,7 +217,7 @@ ns1.yandex.ru.          3565    IN      AAAA    2a02:6b8::1
 
 ![Mind map по настройке](/assets/images/dns--map-2--web--low.png)
 <a href="/assets/images/dns--map-2--download.png" download>
-  Скачать в полном размере
+Скачать в полном размере
 </a>
 
 # Настройка BIND 9

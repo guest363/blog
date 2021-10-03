@@ -1,18 +1,21 @@
 ---
 layout: post
 title: Freeradius
-date:   2020-02-13 17:45:33 +0500
+date: 2020-02-13 17:45:33 +0500
 categories: Разработка
 tag: Linux
 ---
+
+# Протокол RADIUS.
+
+Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
+Для работы использует протокол UDP и стандартным является порт 1812.
+
+
 ![Mind map по Radius](/assets/images/radius--map-1--low.png)
 <a href="/assets/images/radius--map-1--download.png" download>
-  Скачать в полном размере
+Скачать в полном размере
 </a>
-# Протокол RADIUS. 
-Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
-
-Для работы использует протокол UDP и стандартным является порт 1812.
 
 ## Формат пакета Acess-Accept
 
@@ -65,7 +68,7 @@ Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
 
 ![Mind map по настройке Freeradius](/assets/images/radius--map-2--low.png)
 <a href="/assets/images/radius--map-2--download.png" download>
-  Скачать в полном размере
+Скачать в полном размере
 </a>
 
 # Реализация на базе FreeRadius
