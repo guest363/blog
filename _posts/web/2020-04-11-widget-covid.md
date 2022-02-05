@@ -135,6 +135,7 @@ drawStatistic();
   display: -ms-grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   margin-left: 150px;
+  align-items: baseline;
 }
 
 .covid--block {
@@ -152,7 +153,7 @@ drawStatistic();
 .covid--block--value {
   width: 100%;
   font-weight: bold;
-  font-size: 2.2em;
+  font-size: 1em;
   line-height: 1.2em;
 }
 
