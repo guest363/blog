@@ -22,22 +22,22 @@ article :nth-child(1) {
 }
 article p {
   line-height: 1.55em;
-  margin-bottom: 1.4em;
+  margin-bottom: 0.7em;
 }
 h1,
 h2,
 h3 {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 h1 {
-  font-size: calc(1.625rem + 1.6vw);
+  font-size: calc(1.625rem + 1.1vw);
 }
 h2 {
-  font-size: calc(1.5rem + 0.25vw);
+  font-size: calc(1.5rem + 0.1vw);
 }
 h3 {
-  font-size: calc(1.125rem + 0.25vw);
+  font-size: calc(1.125rem + 0.1vw);
 }
 
 blockquote:not(.pull-quote) {
