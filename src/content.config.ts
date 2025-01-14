@@ -2,7 +2,13 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 const post = defineCollection({
-  loader: glob({ base: "./src/content/post", pattern: "**/*.{md,mdx}" }),
+  loader: glob({
+    base: "./src/content/post",
+    pattern: "**/*.{md,mdx}",
+    generateId: (option) => {
+      return `/post/${option.entry}`;
+    },
+  }),
   schema: z.object({
     layout: z.literal("post"),
     title: z.string().min(1),
@@ -18,7 +24,13 @@ const post = defineCollection({
 });
 
 const bookReview = defineCollection({
-  loader: glob({ base: "./src/content/book-review", pattern: "**/*.{md,mdx}" }),
+  loader: glob({
+    base: "./src/content/book-review",
+    pattern: "**/*.{md,mdx}",
+    generateId: (option) => {
+      return `/book-review/${option.entry}`;
+    },
+  }),
   schema: z.object({
     layout: z.literal("book-review"),
     title: z.string().min(1),

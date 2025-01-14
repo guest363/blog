@@ -1,28 +1,41 @@
 ---
+import { type CollectionEntry, getCollection } from "astro:content";
+import { groupBy } from "es-toolkit";
+import { NavComponent } from "../components/Nav.tsx";
 
+const posts = await getCollection("post");
+const bookReviews = await getCollection("bookReview");
+const categories = new Set(
+  [...posts, ...bookReviews].flatMap((post) =>
+    Array.isArray(post.data.category)
+      ? post.data.category[0]
+      : post.data.category,
+  ),
+);
+const postsByCategory = new Map<
+  string,
+  (
+    | Pick<CollectionEntry<"post">, "data">
+    | Pick<CollectionEntry<"bookReview">, "data">
+  )[]
+>();
+for (const post of [...posts, ...bookReviews]) {
+  const category = Array.isArray(post.data.category)
+    ? post.data.category[0]
+    : post.data.category;
+  const savedPosts = postsByCategory.get(category) || [];
+  postsByCategory.set(category, [...savedPosts, post]);
+}
+for (const [category, value] of postsByCategory) {
+  postsByCategory.set(
+    category,
+    groupBy(value, (post) => post.data.tags || post.data.tag),
+  );
+}
 ---
-<nav id="nav" class="layout--menu nav--hide">
-  <div class="menu">
-    <ul class="menu--list">
-      <a class="menu--list--logo" href="{{ site.baseurl }}/" rel="home">
-        <img class="logo" src="/assets/logo.gif" alt="Лиса спряталась и торчит один хвост" srcset="">
-      </a>
-      <div class="menu-separator"></div>
 
-      {% for category in site.categories %}
-      {% if category[0] == "Разработка" %}
-      <li class="menu--list--link is--selected" id={{ 'menu--list--link--' | append: category[0] }}>
-        {% else  %}
-      <li class="menu--list--link" id={{ 'menu--list--link--' | append: category[0] }}>
-        {% endif  %}
-        <a href="#" onclick="changeCategory(`{{ category[0] }}`)">{{ category[0] }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-
-
+<NavComponent categories={categories} postsByCategory={postsByCategory} client:only />
+<!-- 
   {% for category in site.categories %}
   {% assign posts = site.posts | where_exp:"item",
       "item.categories contains category[0]" %}
@@ -46,51 +59,6 @@
       </ul>
     </div>
     {% endfor %}
-
+ -->
 </nav>
 
-
-<script>
-  let defaultOpenCategory, defaultSelectedMenu;
-  const SUB_CSS = `sub-menu--`;
-  const LINK_CSS = `menu--list--link--`;
-  let categoryFromLocalstore = localStorage.getItem('category');
-
-  const hideDOM = (elem, action = true) => {
-    const domElement = document.getElementById(elem);
-    const cssClass = 'sub-menu--display';
-    action ? domElement.classList.remove(cssClass) :
-      domElement.classList.add(cssClass);
-  };
-  const unselectDOM = (elem, action = true) => {
-    const domElement = document.getElementById(elem);
-    const cssClass = 'is--selected';
-    action ? domElement.classList.remove(cssClass) :
-      domElement.classList.add(cssClass);
-  };
-
-  defaultOpenCategory = `${SUB_CSS}Разработка`;
-  defaultSelectedMenu = `${LINK_CSS}Разработка`;
-
-  const changeCategory = category => {
-    localStorage.setItem('category', category);
-    const idShowElem = `${SUB_CSS}${category}`;
-    const idSelectedElem = `${LINK_CSS}${category}`;
-    if (defaultOpenCategory === idShowElem) return;
-
-    hideDOM(idShowElem, false);
-    unselectDOM(idSelectedElem, false);
-
-    hideDOM(defaultOpenCategory);
-    unselectDOM(defaultSelectedMenu)
-
-    defaultOpenCategory = idShowElem;
-    defaultSelectedMenu = idSelectedElem;
-  };
-
-  /* Если в localstore есть категория, то сделать ее активной */
-  if (categoryFromLocalstore) {
-    changeCategory(categoryFromLocalstore);
-  }
-
-</script>
