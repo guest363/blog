@@ -7,6 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "lint": "yarn run -T biome lint --write ./",
+    "format": "yarn run -T biome format --write ./",
     "astro": "astro"
   },
   "dependencies": {
@@ -14,5 +16,8 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.1.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
   }
 }

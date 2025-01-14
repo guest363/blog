@@ -1,8 +1,8 @@
 ---
 layout: book-review
 title: Не про бег
-date:   2020-07-21
-categories: [Спорт]
+date:   "2020-07-21"
+category: [Спорт]
 tag: Рецензия
 cover: '/assets/images/books/ne-pro-beg.jpg'
 author: 'Юрий Строфилов'

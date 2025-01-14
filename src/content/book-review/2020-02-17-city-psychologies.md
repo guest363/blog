@@ -1,8 +1,8 @@
 ---
 layout: book-review
 title: Психология города. Как быть счастливым в мегаполисе.
-date: 2020-02-17
-categories: [Научпоп]
+date: "2020-02-17"
+category: [Научпоп]
 tag: Рецензия
 cover: "/assets/images/psichology-in-city--cover.png"
 author: "Пол Кидуэлл"

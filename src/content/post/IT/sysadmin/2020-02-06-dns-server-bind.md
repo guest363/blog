@@ -2,8 +2,8 @@
 layout: post
 title: DNS сервер на примере BIND
 date: 2020-02-06 17:45:33 +0500
-categories: Разработка
-tag: Linux
+category: Разработка
+tags: ['Linux']
 ---
 
 # DNS сервер BIND

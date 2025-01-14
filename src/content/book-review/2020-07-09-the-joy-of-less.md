@@ -1,8 +1,8 @@
 ---
 layout: book-review
 title: Радость малого
-date: 2020-07-09
-categories: [Научпоп]
+date: "2020-07-09"
+category: [Научпоп]
 tag: Рецензия
 cover: "/assets/images/books/the-joy-of-less.jpg"
 author: "Фрэнсин Джей"

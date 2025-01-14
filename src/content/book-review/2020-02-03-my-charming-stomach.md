@@ -1,8 +1,8 @@
 ---
 layout: book-review
 title: Очаровательный кишечник. Как самый могущественный орган управляет нами
-date:   2020-02-03 
-categories: [Научпоп]
+date:   "2020-02-03" 
+category: [Научпоп]
 tag: Рецензия
 cover: '/assets/images/my-charming-stomach.gif'
 author: 'Джулия Эндерс'

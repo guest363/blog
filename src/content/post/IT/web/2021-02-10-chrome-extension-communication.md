@@ -2,8 +2,8 @@
 layout: post
 title: Общение между page-context, content и background скриптами.
 date: 2021-02-10 13:45:33 +0500
-categories: Разработка
-tag: Web
+category: Разработка
+tags: ['Web']
 ---
 
 ## О чем речь ?

@@ -1,18 +1,39 @@
-import { glob } from 'astro/loaders';
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
-const blog = defineCollection({
-	// Load Markdown and MDX files in the `src/content/blog/` directory.
-	loader: glob({ base: './src/content', pattern: '**/*.{md,mdx}' }),
-	// Type-check frontmatter using a schema
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		// Transform string to Date object
-		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		heroImage: z.string().optional(),
-	}),
+const post = defineCollection({
+  loader: glob({ base: "./src/content/post", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    layout: z.literal("post"),
+    title: z.string().min(1),
+    description: z.optional(z.string().min(1)),
+    date: z.string().refine((val) => !Number.isNaN(Date.parse(val)), {
+      message: "Invalid date format",
+    }),
+    updatedDate: z.string().optional(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    heroImage: z.string().url().optional(),
+  }),
 });
 
-export const collections = { blog };
+const bookReview = defineCollection({
+  loader: glob({ base: "./src/content/book-review", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    layout: z.literal("book-review"),
+    title: z.string().min(1),
+    date: z.string().refine((val) => !Number.isNaN(Date.parse(val)), {
+      message: "Invalid date format",
+    }),
+    category: z.array(z.string()),
+    tag: z.string().min(1),
+    cover: z.string(),
+    author: z.string().min(1),
+    themes: z.string().min(1),
+    size: z.string().min(1),
+    mark: z.string().min(1),
+    link: z.string().url(),
+  }),
+});
+
+export const collections = { post, bookReview };

@@ -2,8 +2,8 @@
 layout: post
 title: Boilerplate для Webpack 4
 date: 2020-05-05 13:45:33 +0500
-categories: Разработка
-tag: Web
+category: Разработка
+tags: ['Web']
 ---
 
 # Boilerplate для Webpack 4.

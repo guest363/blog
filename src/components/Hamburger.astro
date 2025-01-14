@@ -13,6 +13,7 @@
     const hamburgerInit = () => {
         const button = document.getElementById('hamburger');
         const nav = document.getElementById('nav');
+        if(!button || !nav) return;
         button.onclick = () => {
             button.classList.toggle("opened");
             nav.classList.toggle("nav--hide");

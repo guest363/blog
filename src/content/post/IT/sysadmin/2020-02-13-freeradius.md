@@ -2,8 +2,8 @@
 layout: post
 title: Freeradius
 date: 2020-02-13 17:45:33 +0500
-categories: Разработка
-tag: Linux
+category: Разработка
+tags: ['Linux']
 ---
 
 # Протокол RADIUS.

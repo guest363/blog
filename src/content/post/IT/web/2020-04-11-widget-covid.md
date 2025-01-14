@@ -2,8 +2,8 @@
 layout: post
 title: Виджет COVID-19
 date: 2020-04-11 17:45:33 +0500
-categories: Разработка
-tag: Web
+category: Разработка
+tags: ['Web']
 ---
 
 {% include covid-widget.html %}

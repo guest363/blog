@@ -1,6 +1,3 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
 export const SITE_TITLE = 'Личный блог';
 export const SITE_DESCRIPTION = 'Пишу о спорте, воспитании детей, программировании, прочитанных книгах. Структурирую собственные мысли.';
 export const EMAIL = 'dev@guest363.ru';

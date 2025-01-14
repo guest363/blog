@@ -2,8 +2,8 @@
 layout: post
 title: Видеореклама в интернете. VAST и VPAID.
 date: 2020-12-25 13:45:33 +0500
-categories: Разработка
-tag: Web
+category: Разработка
+tags: ['Web']
 ---
 
 ## Стандарты
