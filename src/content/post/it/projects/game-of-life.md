@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 'post'
 title: Game of Life
 date: 2020-05-09 14:45:33 +0500
 category: Проекты

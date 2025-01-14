@@ -1,12 +1,13 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import { removeExtension } from "./utils/remove-extension";
 
 const post = defineCollection({
   loader: glob({
     base: "./src/content/post",
     pattern: "**/*.{md,mdx}",
     generateId: (option) => {
-      return `/post/${option.entry}`;
+      return `/post/${removeExtension(option.entry)}`;
     },
   }),
   schema: z.object({
@@ -28,7 +29,7 @@ const bookReview = defineCollection({
     base: "./src/content/book-review",
     pattern: "**/*.{md,mdx}",
     generateId: (option) => {
-      return `/book-review/${option.entry}`;
+      return `/book-review/${removeExtension(option.entry)}`;
     },
   }),
   schema: z.object({

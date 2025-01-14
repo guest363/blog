@@ -1,5 +1,24 @@
+---
+import { getCollection, getEntries } from "astro:content";
+
+export interface Props {
+  title: string;
+  category: string;
+  url: string;
+}
+const { title, category, url } = Astro.props;
+const allBlogPosts = await getCollection("post", ({ data }) => {
+  console.log(data, data.category, category);
+  return data.category === category;
+});
+
+console.log(category, allBlogPosts);
+---
 <footer class="flex-center">
   <div class="footer--nav">
+
+  </div>
+<!--   <div class="footer--nav">
     {% assign posts = site.posts | where_exp:"item", 
     "item.categories contains page.categories[0]" %} 
     
@@ -14,5 +33,5 @@
       <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
     </div>
     {% endfor %}
-  </div>
+  </div> -->
 </footer>
