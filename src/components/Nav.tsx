@@ -33,10 +33,9 @@ export const NavComponent = ({
               className={`menu--list--link ${category === openCategory ? "is--selected" : ""}`}
               id={`menu--list--link--${category}`}
             >
-              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-              <a href="#" onClick={() => changeCategory(category)}>
+              <button type="button" onClick={() => changeCategory(category)}>
                 {category}
-              </a>
+              </button>
             </li>
           ))}
         </ul>

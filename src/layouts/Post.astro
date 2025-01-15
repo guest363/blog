@@ -13,12 +13,12 @@ const { content } = Astro.props;
 <!DOCTYPE html>
 <html lang="ru" transition:name="root" transition:animate="none">
   <Head />
-  <body transition:animate="slide">
+  <body >
     <Header /> 
     <Hamburger /> 
     <Nav />
-    <div class="blog">
-      <article id="article">
+    <div class="blog" transition:animate="slide">
+      <article id="article" >
         <slot />  
         <ShareButtons title={content.title} category={content.category} url={content.url} />
       </article>

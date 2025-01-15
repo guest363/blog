@@ -13,11 +13,11 @@ const { content } = Astro.props;
 <!DOCTYPE html>
 <html lang="ru" transition:name="root" transition:animate="none">
   <Head />
-  <body transition:animate="slide">
+  <body >
     <Header /> 
     <Hamburger /> 
     <Nav />
-    <div class="blog">
+    <div class="blog" transition:animate="slide">
       <article id="article">
             <img src={content.cover} width="250" height="300" id="book-cover" alt="Обложка книги">
             <table>

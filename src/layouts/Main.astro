@@ -8,13 +8,13 @@ import YA from "../components/YA.astro";
 <!DOCTYPE html>
 <html lang="ru" transition:name="root" transition:animate="none">
   <Head />
-  <body transition:animate="slide">
+  <body >
     <Header /> 
     <Hamburger /> 
     <Nav />
     
-    <div class="blog">
-      <article>
+    <div class="blog" transition:animate="slide">
+      <article >
         <slot /> 
       </article>
     </div>

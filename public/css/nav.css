@@ -24,11 +24,20 @@
     background: transparent;
   }
 } */
-#nav a {
+#nav a, #nav button {
   text-decoration: none;
   color: black;
   line-height: normal;
   display: block;
+}
+
+#nav button {
+  border: none;
+  background: none;
+  padding: 7px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: large;
 }
 
 .is--selected {
