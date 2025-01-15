@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from "astro:content";
+import BookReview from "../layouts/BookReview.astro";
+import { removeExtension } from "../utils/remove-extension";
+
+export async function getStaticPaths() {
+  const bookReviews = await getCollection("bookReview");
+
+  return bookReviews.map((post) => ({
+    params: { review: removeExtension(post.id) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+<BookReview content={post.data}>
+  <Content />
+</BookReview>

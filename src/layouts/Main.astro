@@ -6,9 +6,9 @@ import Nav from "../components/Nav.astro";
 import YA from "../components/YA.astro";
 ---
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" transition:name="root" transition:animate="none">
   <Head />
-  <body>
+  <body transition:animate="slide">
     <Header /> 
     <Hamburger /> 
     <Nav />

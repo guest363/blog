@@ -8,11 +8,11 @@ export interface Props {
 }
 const { title, category, url } = Astro.props;
 const allBlogPosts = await getCollection("post", ({ data }) => {
-  console.log(data, data.category, category);
+  //console.log(data, data.category, category);
   return data.category === category;
 });
 
-console.log(category, allBlogPosts);
+//console.log(category, allBlogPosts);
 ---
 <footer class="flex-center">
   <div class="footer--nav">

@@ -3,8 +3,13 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import { groupBy } from "es-toolkit";
 import { NavComponent } from "../components/Nav.tsx";
 
+export type PostsData = (
+  | CollectionEntry<"post">[]
+  | CollectionEntry<"bookReview">[]
+)[];
 const posts = await getCollection("post");
 const bookReviews = await getCollection("bookReview");
+
 const categories = new Set(
   [...posts, ...bookReviews].flatMap((post) =>
     Array.isArray(post.data.category)
@@ -12,13 +17,7 @@ const categories = new Set(
       : post.data.category,
   ),
 );
-const postsByCategory = new Map<
-  string,
-  (
-    | Pick<CollectionEntry<"post">, "data">
-    | Pick<CollectionEntry<"bookReview">, "data">
-  )[]
->();
+const postsByCategory = new Map<string, PostsData>();
 for (const post of [...posts, ...bookReviews]) {
   const category = Array.isArray(post.data.category)
     ? post.data.category[0]
@@ -29,36 +28,13 @@ for (const post of [...posts, ...bookReviews]) {
 for (const [category, value] of postsByCategory) {
   postsByCategory.set(
     category,
-    groupBy(value, (post) => post.data.tags || post.data.tag),
+    groupBy(value, (post) => {
+      if (Object.hasOwn(post.data, "tags")) return post.data.tags;
+      return post.data.tag;
+    }),
   );
 }
 ---
 
-<NavComponent categories={categories} postsByCategory={postsByCategory} client:only />
-<!-- 
-  {% for category in site.categories %}
-  {% assign posts = site.posts | where_exp:"item",
-      "item.categories contains category[0]" %}
-  {% if category[0] == "Разработка" %}
-  <div class="sub-menu sub-menu--display" id={{ 'sub-menu--' | append: category[0] }}>
-    {% else  %}
-    <div class="sub-menu" id={{ 'sub-menu--' | append: category[0] }}>
-      {% endif  %}
-      <ul class="sub-menu--list">
-
-        {% assign groupPosts = posts | group_by: "tag" %}
-          {% for group in groupPosts %}
-          <span class="sub-menu--list--header">{{group.name}}</span>
-          {% for post in group.items %}
-          <li class="sub-menu--list--link">
-            <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
-        {% endfor %}
-
-      </ul>
-    </div>
-    {% endfor %}
- -->
-</nav>
+<NavComponent categories={categories} postsByCategory={postsByCategory} client:load />
 
