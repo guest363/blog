@@ -1,0 +1,19 @@
+---
+export interface Props {
+  title: string;
+  category: string;
+  url: string;
+}
+
+const { title, category, url } = Astro.props;
+---
+  <button
+          class="share"
+          id="share"
+          data-shareText={`Заметка: ${title}. Категории ${category}.`}
+          data-href={`https://owl-shaker.ru${url}`}
+  >
+  Поделится
+   </button>
+
+<script type="module" is:inline src="/assets/js/share.js"></script>

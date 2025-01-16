@@ -1,0 +1,58 @@
+---
+import ArticleNav from "../components/ArticleNav.astro";
+import Footer from "../components/Footer.astro";
+import Hamburger from "../components/Hamburger.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
+import ShareButtons from "../components/ShareButtons.astro";
+import YA from "../components/YA.astro";
+
+const { content } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="ru" transition:name="root" transition:animate="none">
+  <Head />
+  <body >
+    <Header /> 
+    <Hamburger /> 
+    <Nav />
+    <div class="blog" transition:animate="slide">
+      <article id="article">
+            <img src={content.cover} width="250" height="300" id="book-cover" alt="Обложка книги">
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <td>{ content.title }</td>
+                </tr>
+                <tr>
+                    <th>Автор</th>
+                    <td>{ content.author }</td>
+                </tr>
+                <tr>
+                    <th>Темы</th>
+                    <td>{content.themes }</td>
+                </tr>
+                <tr>
+                    <th>Обьем</th>
+                    <td>{ content.size } стр.</td>
+                </tr>
+                <tr>
+                    <th>Оценка</th>
+                    <td>{ content.mark }</td>
+                </tr>
+                <tr>
+                    <th>Купить</th>
+                    <td><a href={ content.link }>Ссылка</a></td>
+                </tr>
+                </tr>
+            </table>
+            <slot />  
+            <ShareButtons title={content.title} category={content.category} url={content.url} />
+          </article>
+          <ArticleNav/>
+        </div>
+        <Footer title={content.title} category={content.category} url={content.url}/>
+      </body>
+      <YA />
+    </html>

@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.6.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "yarn run -T biome lint --write ./",
+    "format": "yarn run -T biome format --write ./",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.5",
+    "@astrojs/react": "^4.1.4",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.1.6",
+    "es-toolkit": "1.31.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-use": "^17.6.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/react": "^19.0.7"
+  }
+}

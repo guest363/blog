@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from "astro:content";
+import Post from "../layouts/Post.astro";
+import { removeExtension } from "../utils/remove-extension";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("post");
+
+  return posts.map((post) => ({
+    params: { blog: removeExtension(post.id) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+<Post content={post.data} transition:animate={"slide"}>
+  <Content />
+</Post>

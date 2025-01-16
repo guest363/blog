@@ -1,0 +1,63 @@
+---
+layout: post
+title: SSH
+date: 2020-02-14 17:00:00 +0500
+category: Разработка
+tags: ['Linux']
+---
+
+# Настройка SSH сервера
+
+Установка SSH сервера `sudo apt-get install openssh-server`
+Изменение файла настроек OpenSSH /etc/ssh/sshd_config
+
+```conf
+Port 45466 # меняем стандартный порт 22
+PermitRootLogin no
+AllowUsers userName
+LoginGraseTime 30 # время на ввода пароля
+ClientAliveInterval 600 # время бездействия после которого сервер разорвет соединение
+ClientAliveCountMax 0 # т.е. после 600 с. бездействия клиента отключат без уведомления
+```
+
+`sudo aptitude search openssh` - показывает, с подробным описанием, какие пакеты подобной тематики есть в системе.
+
+## Компоненты openssh
+
+- `/usr/bin/ssh` клиент ssh
+- sftp - ftp подобный ssh клиент
+- sshd - демон предоставляющий доступ к ресурсам
+- sftp-server - отдельная реализация SFTP, обладающая большими возможностями
+- ssh-keygen - генератор пар ключей
+- ssh-agent - поддерживает кэш закрытых ключей
+- ssh-add - добавляет ключи в кэш ssh-agent
+
+## Генерация ключей для Putty и Bash
+
+Установка Putty `sudo apt-get install putty`
+
+### Генерация приватного ключа сервера
+
+```sh
+puttygen -O private -o putty-server1.ppk -t rsa -b 8192 -C <user_name> 
+```
+
+Ключ "-О" для генерации в формате путти приватного ключа. Генерируется очень долго, минут 50. По завершению ввести пароль для зашифрованого ключа.
+
+### Генерация открытого ключа сервера
+
+```sh
+puttygen -O public-openssh putty-server1.ppk -o server1ssh.pub
+cp server1ssh.pub .ssh/
+```
+
+командой `ssh-keygen -l -f server1ssh.pub` можно посмотреть отпечаток ключа
+
+### Генерация приватного ключа в формате OpenSSH для доступа из консоли
+
+```sh
+puttygen -O private-openssh putty-server1.ppk -o server1openssh.key
+```
+
+`cat server1openssh.key` - для просмотра ключа. Видим что ключ зашифрован на DES, что не есть хорошо. Перешефруем на AES-128. Для этого просто сменим пароль на тот же самый `ssh-keygen -f server1openssh.key -p`
+Для использования ssh на Linux `ssh -i server1openssh.key 102.145.32.100 -p 45466`

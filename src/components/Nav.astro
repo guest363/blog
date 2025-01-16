@@ -1,0 +1,40 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import { groupBy } from "es-toolkit";
+import { NavComponent } from "../components/Nav.tsx";
+
+export type PostsData = (
+  | CollectionEntry<"post">[]
+  | CollectionEntry<"bookReview">[]
+)[];
+const posts = await getCollection("post");
+const bookReviews = await getCollection("bookReview");
+
+const categories = new Set(
+  [...posts, ...bookReviews].flatMap((post) =>
+    Array.isArray(post.data.category)
+      ? post.data.category[0]
+      : post.data.category,
+  ),
+);
+const postsByCategory = new Map<string, PostsData>();
+for (const post of [...posts, ...bookReviews]) {
+  const category = Array.isArray(post.data.category)
+    ? post.data.category[0]
+    : post.data.category;
+  const savedPosts = postsByCategory.get(category) || [];
+  postsByCategory.set(category, [...savedPosts, post]);
+}
+for (const [category, value] of postsByCategory) {
+  postsByCategory.set(
+    category,
+    groupBy(value, (post) => {
+      if (Object.hasOwn(post.data, "tags")) return post.data.tags;
+      return post.data.tag;
+    }),
+  );
+}
+---
+
+<NavComponent client:load categories={categories} postsByCategory={postsByCategory}  />
+
