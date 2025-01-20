@@ -1,16 +1,24 @@
-import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from "astro:content";
+import rss from "@astrojs/rss";
+import MarkdownIt from "markdown-it";
+import sanitizeHtml from "sanitize-html";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+const parser = new MarkdownIt();
 
 export async function GET(context) {
-	const posts = await getCollection('blog');
-	return rss({
-		title: SITE_TITLE,
-		description: SITE_DESCRIPTION,
-		site: context.site,
-		items: posts.map((post) => ({
-			...post.data,
-			link: `/blog/${post.id}/`,
-		})),
-	});
+  const posts = await getCollection("blog");
+  const reviews = await getCollection("bookReview");
+  const allRssItems = [...posts, ...reviews];
+  return rss({
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    site: context.site,
+    items: allRssItems.map((post) => ({
+      ...post.data,
+      link: `/blog/${post.id}/`,
+      content: sanitizeHtml(parser.render(post.body), {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+      }),
+    })),
+  });
 }

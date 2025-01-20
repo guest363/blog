@@ -43,13 +43,12 @@ import { ClientRouter } from "astro:transitions";
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="400" />
 
-  <!-- RSS -->
   <link
-    rel="alternate"
-    type="application/atom+xml"
-    title="{{ site.title }}"
-    href="/feed.xml"
-  />
+  rel="alternate"
+  type="application/rss+xml"
+  title="Your Site's Title"
+  href={new URL("rss.xml", Astro.site)}
+/>
 
   <title>Блог</title>
 

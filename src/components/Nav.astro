@@ -23,11 +23,13 @@ for (const post of [...posts, ...bookReviews]) {
     ? post.data.category[0]
     : post.data.category;
   const savedPosts = postsByCategory.get(category) || [];
+  //@ts-expect-error
   postsByCategory.set(category, [...savedPosts, post]);
 }
 for (const [category, value] of postsByCategory) {
   postsByCategory.set(
     category,
+    //@ts-expect-error
     groupBy(value, (post) => post.data.tags),
   );
 }

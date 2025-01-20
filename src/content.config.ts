@@ -23,7 +23,7 @@ const post = defineCollection({
   }),
   schema: z.object({
     ...commonSchema,
-    layout: z.literal("post"),
+    layout: z.literal("post").optional(),
     heroImage: z.string().url().optional(),
   }),
 });
@@ -38,7 +38,7 @@ const bookReview = defineCollection({
   }),
   schema: z.object({
     ...commonSchema,
-    layout: z.literal("book-review"),
+    layout: z.literal("book-review").optional(),
     cover: z.string().optional(),
     author: z.string().min(1),
     themes: z.string().min(1),
