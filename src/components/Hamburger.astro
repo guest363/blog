@@ -11,11 +11,13 @@
 </button>
 
 <script type="module">
-    const button = document.getElementById('hamburger');
-    button.onclick = () => {
-        const nav = document.getElementById('nav');
-        if(!nav) return;
-        button.classList.toggle("opened");
-        nav.classList.toggle("nav--hide");
-    };
+    document.addEventListener('astro:page-load', () => {
+        const button = document.getElementById('hamburger');
+        button.onclick = () => {
+            const nav = document.getElementById('nav');
+            if(!nav) return;
+            button.classList.toggle("opened");
+            nav.classList.toggle("nav--hide");
+        };
+    });
 </script>

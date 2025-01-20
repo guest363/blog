@@ -15,14 +15,14 @@ const { content } = Astro.props;
   <Head />
   <body >
     <Header /> 
-    <Hamburger client:load/> 
+    <Hamburger client:load /> 
     <Nav />
     <div class="blog" transition:animate="slide">
       <article id="article" >
         <slot />  
         <ShareButtons title={content.title} category={content.category} url={content.url} />
       </article>
-      <ArticleNav client:load/>
+      <ArticleNav />
     </div>
     <Footer title={content.title} category={content.category} url={content.url}/>
   </body>
