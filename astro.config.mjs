@@ -8,5 +8,4 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://owl-shaker.ru",
   integrations: [mdx(), sitemap(), react()],
-  
 });

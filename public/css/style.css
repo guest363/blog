@@ -97,13 +97,8 @@ pre {
 ul {
   padding-inline-start: var(--padding-list);
 }
-/* Для всех highlighter-rouge которые находятся в списке. Компенсирует отступы списка. */
-li > .highlighter-rouge {
-  margin-left: calc(var(--padding-list) * -1 - var(--text-side));
-  padding: 12px calc(var(--padding-list) + var(--text-side));
-}
-/* В такой класс транслируется джекилом inline code маркдауна */
-code.highlighter-rouge {
+
+p > code {
   padding: 2px 6px;
   color: var(--color-title);
   background: var(--color-accent);

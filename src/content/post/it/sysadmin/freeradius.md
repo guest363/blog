@@ -77,7 +77,7 @@ Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
 
 ## Установка
 
-```bash
+```shellscript
 sudo apt-get install freeradius
 ```
 

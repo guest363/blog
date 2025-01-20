@@ -11,7 +11,7 @@ tags: ['Linux']
 Установка SSH сервера `sudo apt-get install openssh-server`
 Изменение файла настроек OpenSSH /etc/ssh/sshd_config
 
-```conf
+```ssh-config
 Port 45466 # меняем стандартный порт 22
 PermitRootLogin no
 AllowUsers userName

@@ -44,7 +44,7 @@ tags: ['Web']
 - Различные параметры рекламной компании, такие как кто ее создатель, цена и так далее;
 - Медиафайлы рекламной компании.
 
-```XML
+```xml
 <VAST version="4.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
   <Ad id="20001" >
     <InLine>

@@ -131,7 +131,7 @@ DNS сервера BIND (Berkeley Internet Name Domain, ранее: Berkeley Int
 
 ### Ядро на основании файла `/etc/nsswitch.conf` определяет по какому пути действовать.
 
-```bash
+```shellscript
 cat /etc/nsswitch.conf
 ```
 
@@ -143,7 +143,7 @@ networks: file /файл /etc/network
 
 ### Если согласно `/etc/nsswitch.conf` запрос идет на DNS то исп `/etc/resolv.conf`.
 
-```bash
+```shellscript
 cat /etc/resolv.conf
 ```
 
