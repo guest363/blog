@@ -32,4 +32,29 @@
     </div>
   </div>
 </div>
-<script type="module" src="/assets/js/covid19.js"></script>
+<script type="module">
+  const URL = "https://coronavirus-19-api.herokuapp.com/countries/";
+
+const showTypes = [
+  "cases",
+  "todayCases",
+  "deaths",
+  "todayDeaths",
+  "recovered",
+  "critical",
+];
+const getCountryInfo = async (url, country) => {
+  const response = await fetch(url + country);
+  return await response.json();
+};
+
+const drawStatistic = async () => {
+  const statistic = await getCountryInfo(URL, "Russia");
+  showTypes.forEach((type) => {
+    const span = document.getElementById(`covid-${type}`);
+    span.innerHTML = statistic[type];
+  });
+};
+
+drawStatistic();
+</script>

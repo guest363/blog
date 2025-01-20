@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Виджет COVID-19
 date: 2020-04-11 17:45:33 +0500
 category: Разработка
 tags: ['Web']
+
 ---
+import Widget from "../../../../components/CovidWidget.astro";
 
-{% include covid-widget.html %}
-
+<br />
+<Widget client:load />
 # Виджет COVID-19
 
 Отображает статистические данные по распространению коронавируса в России.
