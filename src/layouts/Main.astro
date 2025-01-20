@@ -1,0 +1,24 @@
+---
+import Hamburger from "../components/Hamburger.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
+import YA from "../components/YA.astro";
+---
+<!DOCTYPE html>
+<html lang="ru" transition:name="root" transition:animate="none">
+  <Head />
+  <body >
+    <Header /> 
+    <Hamburger /> 
+    <Nav />
+    
+    <div class="blog" transition:animate="slide">
+      <article >
+        <slot /> 
+      </article>
+    </div>
+  </body>
+  <YA />
+</html>
+

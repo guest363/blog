@@ -1,0 +1,9 @@
+import{R as d}from"./index.TDRO66Xc.js";var c={exports:{}},l={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var x;function p(){if(x)return l;x=1;var i=Symbol.for("react.transitional.element"),u=Symbol.for("react.fragment");function n(o,r,e){var a=null;if(e!==void 0&&(a=""+e),r.key!==void 0&&(a=""+r.key),"key"in r){e={};for(var t in r)t!=="key"&&(e[t]=r[t])}else e=r;return r=e.ref,{$$typeof:i,type:o,key:a,ref:r!==void 0?r:null,props:e}}return l.Fragment=u,l.jsx=n,l.jsxs=n,l}var h;function f(){return h||(h=1,c.exports=p()),c.exports}var s=f();const v=({categories:i,postsByCategory:u})=>{const[n,o]=d.useState(typeof localStorage<"u"?localStorage.getItem("category"):""),r=e=>{localStorage.setItem("category",e),o(e)};return s.jsxs("nav",{id:"nav",className:"layout--menu nav--hide",children:[s.jsx("div",{className:"menu",children:s.jsxs("ul",{className:"menu--list",children:[s.jsx("a",{className:"menu--list--logo",href:"/",rel:"home",children:s.jsx("img",{className:"logo",src:"/assets/logo.gif",alt:"Лиса спряталась и торчит один хвост",srcSet:""})}),s.jsx("div",{className:"menu-separator"}),Array.from(i).map(e=>s.jsx("li",{className:`menu--list--link ${e===n?"is--selected":""}`,id:`menu--list--link--${e}`,children:s.jsx("button",{type:"button",onClick:()=>r(e),children:e})},e))]})}),s.jsx("div",{className:"sub-menu",children:s.jsx("ul",{className:"sub-menu--list",children:Array.from(u).filter(([e])=>e===n).map(([e,a])=>Object.entries(a).map(([t,j])=>s.jsxs(d.Fragment,{children:[s.jsx("span",{className:"sub-menu--list--header",children:t}),j.map(m=>s.jsx("li",{className:"sub-menu--list--link",children:s.jsx("a",{href:m.id,children:m.data.title})},m.data.title))]},t)))})})]})};export{v as NavComponent};

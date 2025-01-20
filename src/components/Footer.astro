@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+
+export interface Props {
+  title: string;
+  category: string;
+  url: string;
+}
+const { category } = Astro.props;
+const allBlogPosts = await getCollection("post", ({ data }) => {
+  return data.category === category;
+});
+const allReviewPosts = await getCollection("bookReview", ({ data }) => {
+  return data.category === category;
+});
+const allPosts = [...allBlogPosts, ...allReviewPosts];
+---
+<footer class="flex-center">
+  <div class="footer--nav">
+    <div class="footer--nav--header">
+      Тема "{category}"
+    </div>
+    {allPosts.map(post => {
+      return (
+        <div class="footer--nav--item">
+          <a href={`${post.id}`}>{post.data.title}</a>
+        </div>)
+        })}
+  </div>
+</footer>

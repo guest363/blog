@@ -2,8 +2,8 @@
 layout: book-review
 title: Мужские правила. Отношения, секс, психология.
 date: 2021-10-1
-categories: [Научпоп]
-tag: Рецензия
+category: Научпоп
+tags: ['Рецензия']
 cover: "/assets/images/books/man-rules.jpg"
 author: "Марк Мэнсон"
 themes: "Отношения, Психология"
