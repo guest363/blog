@@ -28,13 +28,10 @@ for (const post of [...posts, ...bookReviews]) {
 for (const [category, value] of postsByCategory) {
   postsByCategory.set(
     category,
-    groupBy(value, (post) => {
-      if (Object.hasOwn(post.data, "tags")) return post.data.tags;
-      return post.data.tag;
-    }),
+    groupBy(value, (post) => post.data.tags),
   );
 }
 ---
 
-<NavComponent client:load categories={categories} postsByCategory={postsByCategory}  />
+<NavComponent client:only="react" categories={categories} postsByCategory={postsByCategory}  />
 

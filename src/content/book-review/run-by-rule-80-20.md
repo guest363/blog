@@ -2,8 +2,8 @@
 layout: book-review
 title: Бег по правилу 80/20
 date:   "2020-02-03"
-category: [Спорт]
-tag: Рецензия
+category: Спорт
+tags: ['Рецензия']
 cover: '/assets/images/run-by-rule-80-20.jpg'
 author: 'Мэт Фицджеральд'
 themes: 'Бег'

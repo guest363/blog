@@ -2,8 +2,8 @@
 layout: book-review
 title: Самостоятельный ребенок, или Как стать "ленивой мамой"
 date:   '2020-01-18'
-category: [Дети]
-tag: Рецензия
+category: Дети
+tags: ['Рецензия']
 cover: '/assets/images/children/lazy-mam.jpeg'
 author: 'Анна Быкова'
 themes: 'Детская психология, педагогика'

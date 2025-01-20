@@ -10,16 +10,12 @@
     </svg>
 </button>
 
-<script>
-      console.log('Welcome, browser console!');
-        const button = document.getElementById('hamburger');
-        console.log('button',button);
-        if(!button) return;
-        button.onclick = () => {
-            const nav = document.getElementById('nav');
-            console.log(nav);
-            if(!nav) return;
-            button.classList.toggle("opened");
-            nav.classList.toggle("nav--hide");
-        };
+<script type="module">
+    const button = document.getElementById('hamburger');
+    button.onclick = () => {
+        const nav = document.getElementById('nav');
+        if(!nav) return;
+        button.classList.toggle("opened");
+        nav.classList.toggle("nav--hide");
+    };
 </script>

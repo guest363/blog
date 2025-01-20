@@ -34,7 +34,5 @@
     add.innerHTML = ""; // удаляет всех потомков элемента.
     add.appendChild(fragment); // загружает .
   };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    makeMenu();
-  });
+  document.addEventListener("DOMContentLoaded", makeMenu);
 </script>

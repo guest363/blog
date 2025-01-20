@@ -2,8 +2,8 @@
 layout: book-review
 title: Как стать ребенку другом, оставаясь его родителем 
 date:   '2020-01-29' 
-category: [Дети]
-tag: Рецензия
+category: Дети
+tags: ['Рецензия']
 cover: '/assets/images/children/how-to-be-friends.jpg'
 author: 'Марина Cолотова'
 themes: 'Воспитание детей'

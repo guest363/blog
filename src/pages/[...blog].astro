@@ -16,6 +16,6 @@ const { post } = Astro.props;
 
 const { Content } = await render(post);
 ---
-<Post content={post.data} transition:animate={"slide"}>
+<Post content={post.data} >
   <Content />
 </Post>

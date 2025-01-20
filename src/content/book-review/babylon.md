@@ -2,8 +2,8 @@
 layout: book-review
 title: Cамый богатый человек в вавилоне
 date: "2020-07-09"
-category: [Научпоп]
-tag: Рецензия
+category: Научпоп
+tags: ['Рецензия']
 cover: "/assets/images/books/babylon.jpg"
 author: "Клейсон Джорж Самюэль"
 themes: "Финансовая грамотность"

@@ -2,6 +2,7 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 import { removeExtension } from "./utils/remove-extension";
 
+
 const post = defineCollection({
   loader: glob({
     base: "./src/content/post",
@@ -38,8 +39,10 @@ const bookReview = defineCollection({
     date: z.string().refine((val) => !Number.isNaN(Date.parse(val)), {
       message: "Invalid date format",
     }),
-    category: z.array(z.string()),
-    tag: z.string().min(1),
+    updatedDate: z.string().optional(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    /** Специфичные */
     cover: z.string(),
     author: z.string().min(1),
     themes: z.string().min(1),

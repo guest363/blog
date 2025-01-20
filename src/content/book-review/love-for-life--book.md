@@ -2,8 +2,8 @@
 layout: book-review
 title: Любовь на всю жизнь руководство для пар
 date: '2020-01-26'
-category: [Дети]
-tag: Рецензия
+category: Дети
+tags: ['Рецензия']
 cover: "/assets/images/children/love-for-life.png"
 author: "Харвилл Хендрикс и Хелен Хант"
 themes: "Взаимоотношения людей, психология, детская психология"

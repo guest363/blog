@@ -137,6 +137,7 @@
     width: auto;
     position: inherit;
   }
+
   .sub-menu--list {
     width: max-content;
     max-width: 250px;
