@@ -6,7 +6,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 const parser = new MarkdownIt();
 
 export async function GET(context) {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("post");
   const reviews = await getCollection("bookReview");
   const allRssItems = [...posts, ...reviews];
   return rss({
@@ -15,6 +15,7 @@ export async function GET(context) {
     site: context.site,
     items: allRssItems.map((post) => ({
       ...post.data,
+      pubDate: post.data.date,
       link: `/blog/${post.id}/`,
       content: sanitizeHtml(parser.render(post.body), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
