@@ -1,0 +1,92 @@
+:root {
+  --covid-cases: white;
+  --covid-todayCases: #ffd3d2;
+  --covid-deaths: white;
+  --covid-todayDeaths: white;
+  --covid-recovered: #eaf9e2;
+  --covid-critical: white;
+}
+#covid-cases {
+  color: var(--covid-cases);
+}
+#covid-todayCases {
+  color: var(--covid-todayCases);
+}
+#covid-deaths {
+  color: var(--covid-deaths);
+}
+#covid-todayDeaths {
+  color: var(--covid-todayDeaths);
+}
+#covid-recovered {
+  color: var(--covid-recovered);
+}
+#covid-critical {
+  color: var(--covid-critical);
+}
+#covid-widget {
+  max-width: 700px;
+  margin: 40px auto;
+  border: 2px solid gray;
+  background-color: gray;
+  padding: 1em;
+  border-radius: 5px;
+  position: relative;
+  background-image: url(/assets/images/covid-2.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+  box-sizing: border-box;
+}
+
+#covid-widget h3 {
+  font-size: 2em;
+  width: max-content;
+  position: absolute;
+  top: -2.3em;
+  color: grey;
+}
+.covid--grid {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-left: 150px;
+  align-items: baseline;
+}
+
+.covid--block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 1em 0;
+  color: white;
+}
+.covid--block--header {
+  font-size: 0.85em;
+}
+.covid--block--value {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.covid--image {
+  display: none;
+  position: absolute;
+}
+.covid--image img {
+  max-width: 150px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #covid-widget {
+    margin: 40px 1em;
+    background-position: center center;
+  }
+  .covid--grid {
+    margin-left: 0;
+  }
+}
