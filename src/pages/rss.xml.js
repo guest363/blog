@@ -16,7 +16,7 @@ export async function GET(context) {
     items: allRssItems.map((post) => ({
       ...post.data,
       pubDate: post.data.date,
-      link: `/blog/${post.id}/`,
+      link: `/${post.id}/`,
       content: sanitizeHtml(parser.render(post.body), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
       }),

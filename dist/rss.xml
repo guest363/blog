@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Личный блог</title><description>Пишу о спорте, воспитании детей, программировании, прочитанных книгах. Структурирую собственные мысли.</description><link>https://owl-shaker.ru/</link><item><title>Заметки из курса партнерских родов, проходили вместе с женой.</title><link>https://owl-shaker.ru/blog/post/conversations/pregnat-courses/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/conversations/pregnat-courses/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Общие правила воспитания&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Личный блог</title><description>Пишу о спорте, воспитании детей, программировании, прочитанных книгах. Структурирую собственные мысли.</description><link>https://owl-shaker.ru/</link><item><title>Заметки из курса партнерских родов, проходили вместе с женой.</title><link>https://owl-shaker.ru/post/conversations/pregnat-courses/</link><guid isPermaLink="true">https://owl-shaker.ru/post/conversations/pregnat-courses/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Общие правила воспитания&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Правило Да\Нет. Подкрепление жестами слов. Чтобы ребенок мог изъявлять желания еще до того как научится говорить.&lt;/li&gt;
 &lt;li&gt;Всегда выполнять обещание данное ребенку.&lt;/li&gt;
@@ -200,7 +200,7 @@
 &lt;li&gt;после родов нормальное состояние это приподнятое настроение!&lt;/li&gt;
 &lt;li&gt;в послеродовой 2 часа лежать на животе, все движения очень плавные и никакой нагрузки&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Консультация Алексей Б.</title><link>https://owl-shaker.ru/blog/post/conversations/run-consultation-alex/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/conversations/run-consultation-alex/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Консультация у Алексея Б.&lt;/h2&gt;
+</content:encoded></item><item><title>Консультация Алексей Б.</title><link>https://owl-shaker.ru/post/conversations/run-consultation-alex/</link><guid isPermaLink="true">https://owl-shaker.ru/post/conversations/run-consultation-alex/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Консультация у Алексея Б.&lt;/h2&gt;
 &lt;p&gt;Активно занимается бегом с 2012 года. Пробежал марафон за 3 часа 18 минут в 2019 году.&lt;/p&gt;
 &lt;h2&gt;Тезисы&lt;/h2&gt;
 &lt;h3&gt;С чего начать&lt;/h3&gt;
@@ -234,7 +234,7 @@
 &lt;ul&gt;
 &lt;li&gt;Мэт Фицджеральд - Бег по правилу 80/20. Тренируйся медленно, чтобы соревноваться быстрее.&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Game of Life</title><link>https://owl-shaker.ru/blog/post/it/projects/game-of-life/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/projects/game-of-life/</guid><pubDate>Sat, 09 May 2020 09:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Игра «Жизнь»&lt;/h1&gt;
+</content:encoded></item><item><title>Game of Life</title><link>https://owl-shaker.ru/post/it/projects/game-of-life/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/projects/game-of-life/</guid><pubDate>Sat, 09 May 2020 09:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Игра «Жизнь»&lt;/h1&gt;
 &lt;p&gt;Клеточный автомат, придуманный английским математиком Джоном Конвеем в 1970 году (англ. Conway&apos;s Game of Life).
 Простая реализация на js.
 Работает и на мобильных устройствах. &lt;a href=&quot;https://guest363.github.io/game-of-life/&quot;&gt;Играть&lt;/a&gt;.&lt;/p&gt;
@@ -257,7 +257,7 @@
 &lt;h2&gt;Райский сад&lt;/h2&gt;
 &lt;p&gt;Райским садом (садом Эдема) называется такое расположение клеток, у которого не может быть предыдущего поколения. Практически для любой игры, состояние клеток в которой определяется несколькими соседями на предыдущем шаге, можно доказать существование садов Эдема, но построить конкретную фигуру гораздо сложнее.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/projects/Garden_of_Eden_pattern.png&quot; alt=&quot;Эдем&quot; /&gt;&lt;/p&gt;
-</content:encoded></item><item><title>Тестовое TODO на Vue.js</title><link>https://owl-shaker.ru/blog/post/it/projects/to-do/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/projects/to-do/</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Планер задач&lt;/h1&gt;
+</content:encoded></item><item><title>Тестовое TODO на Vue.js</title><link>https://owl-shaker.ru/post/it/projects/to-do/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/projects/to-do/</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Планер задач&lt;/h1&gt;
 &lt;p&gt;Тестовое задание для itprojects.management.
 Товарищи из этой конторы оказались сомнительными личностями, с сомнительными ценностями. Не рекомендовал бы там работать.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://guest363.github.io/TODO_test/&quot;&gt;Посмотреть&lt;/a&gt;&lt;/p&gt;
@@ -330,7 +330,7 @@
 &lt;li&gt;Добавить кастомные алерты для отзывчивости приложения.&lt;/li&gt;
 &lt;li&gt;Мне для того приложения хотелось бы иметь возможность объединять списки по группам, например в папки. Скажем, рабочие, паутинки и так далее.&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Кодер в МТК-2</title><link>https://owl-shaker.ru/blog/post/it/projects/mtk2-coder/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/projects/mtk2-coder/</guid><pubDate>Sat, 09 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Кодер текста в МТК-2&lt;/h1&gt;
+</content:encoded></item><item><title>Кодер в МТК-2</title><link>https://owl-shaker.ru/post/it/projects/mtk2-coder/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/projects/mtk2-coder/</guid><pubDate>Sat, 09 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Кодер текста в МТК-2&lt;/h1&gt;
 &lt;p&gt;Переводит введенный текст в кодировку МТК-2.
 Закодированный текст можно скачать в виде картинки, которая выглядит как перфолента.
 Проект just for fun.
@@ -357,7 +357,7 @@
 &lt;/blockquote&gt;
 &lt;h3&gt;Марк Твен.&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/projects/mark-quota.png&quot; alt=&quot;Избегайте тех, кто старается подорвать вашу веру в себя. Великий 4еловек, наоборот, внушает 4увство, 4то вы можете стать великим.&quot; /&gt;&lt;/p&gt;
-</content:encoded></item><item><title>Заметка - AV1 кодек и FFmpeg</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/av1-ffmpeg/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/av1-ffmpeg/</guid><pubDate>Tue, 20 Aug 2024 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Кодек AV1&lt;/h1&gt;
+</content:encoded></item><item><title>Заметка - AV1 кодек и FFmpeg</title><link>https://owl-shaker.ru/post/it/sysadmin/av1-ffmpeg/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/av1-ffmpeg/</guid><pubDate>Tue, 20 Aug 2024 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Кодек AV1&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://ffmpeg.org/ffmpeg-codecs&quot;&gt;FFmpeg&lt;/a&gt; поддерживает кодирование в AV1 использую внешние библиотеки а именно - libaom, librav1e, libsvtav1 и libdav1d.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;libdav1d - Только декодер и его не рассматривал.&lt;/p&gt;
@@ -436,7 +436,7 @@
 &lt;/table&gt;
 &lt;h3&gt;🏆 Победитель&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;libsvtav1&lt;/strong&gt; - имеет тотальное превосходство над остальными кодерами в многопоточных системах. Он единственный может полностью утилизировать CPU и скорость сравнима с транскодингом в H.264. &lt;a href=&quot;https://caniuse.com/av1&quot;&gt;Can I use?&lt;/a&gt; - можно использовать.&lt;/p&gt;
-</content:encoded></item><item><title>Заметка - HLS</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/av1-hls/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/av1-hls/</guid><pubDate>Tue, 20 Aug 2024 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Не работает AV1 поток в HLS&lt;/h2&gt;
+</content:encoded></item><item><title>Заметка - HLS</title><link>https://owl-shaker.ru/post/it/sysadmin/av1-hls/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/av1-hls/</guid><pubDate>Tue, 20 Aug 2024 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Не работает AV1 поток в HLS&lt;/h2&gt;
 &lt;p&gt;У &lt;a href=&quot;https://ffmpeg.org/ffmpeg-codecs&quot;&gt;FFmpeg&lt;/a&gt; есть опция при формировании hls плейлиста &lt;code&gt;hls_segment_type&lt;/code&gt; которая может быть&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&quot;mpegts&quot; - Output segment files in MPEG-2 Transport Stream format. This is compatible with all HLS versions.&lt;/li&gt;
@@ -453,7 +453,7 @@
 &lt;li&gt;&lt;code&gt;-g 30&lt;/code&gt; которая вставляет опорный кадр каждые 30 кадров.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Тогда количество файлов с чанками будет соответствовать заданному.&lt;/p&gt;
-</content:encoded></item><item><title>SQUID</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/squid/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/squid/</guid><pubDate>Thu, 13 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;SQUID&lt;/h1&gt;
+</content:encoded></item><item><title>SQUID</title><link>https://owl-shaker.ru/post/it/sysadmin/squid/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/squid/</guid><pubDate>Thu, 13 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;SQUID&lt;/h1&gt;
 &lt;p&gt;Squid (англ. squid — «кальмар») — программный пакет, реализующий функцию кэширующего прокси-сервера для протоколов HTTP, FTP, Gopher и (в случае соответствующих настроек) HTTPS. Разработан сообществом как программа с открытым исходным кодом (распространяется в соответствии с GNU GPL). Все запросы выполняет как один неблокируемый процесс ввода-вывода.&lt;/p&gt;
 &lt;h2&gt;Алгоритм действий при установке&lt;/h2&gt;
 &lt;ul&gt;
@@ -547,7 +547,7 @@ TEMPLATEPATH /etc/havp/templates/ru
 PORT 8081
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;sudo servecis havp restart&lt;/code&gt;&lt;/p&gt;
-</content:encoded></item><item><title>Freeradius</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/freeradius/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/freeradius/</guid><pubDate>Thu, 13 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Протокол RADIUS.&lt;/h1&gt;
+</content:encoded></item><item><title>Freeradius</title><link>https://owl-shaker.ru/post/it/sysadmin/freeradius/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/freeradius/</guid><pubDate>Thu, 13 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Протокол RADIUS.&lt;/h1&gt;
 &lt;p&gt;Remote Authentication Dial In User Service. RFC 2058 и RFC 2059.
 Для работы использует протокол UDP и стандартным является порт 1812.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/radius--map-1--low.png&quot; alt=&quot;Mind map по Radius&quot; /&gt;
@@ -634,7 +634,7 @@ PORT 8081
     }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Определяется для squid, чтобы он имел канал взаимодействия с radius.&lt;/p&gt;
-</content:encoded></item><item><title>DNS сервер на примере BIND</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/dns-server-bind/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/dns-server-bind/</guid><pubDate>Thu, 06 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;DNS сервер BIND&lt;/h1&gt;
+</content:encoded></item><item><title>DNS сервер на примере BIND</title><link>https://owl-shaker.ru/post/it/sysadmin/dns-server-bind/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/dns-server-bind/</guid><pubDate>Thu, 06 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;DNS сервер BIND&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/dns--map-1--web--low.png&quot; alt=&quot;Mind map по DNS&quot; /&gt;
 &amp;lt;a href=&quot;/assets/images/dns--map-1--download.png&quot; download&amp;gt;
 Скачать в полном размере
@@ -905,7 +905,7 @@ zone &quot;88.168.192.in-addr.arpa&quot; { type: master; file: &quot;/etc/bind/d
  smtp IN CNAME mail.rs.local.
  \_adsp.\_domaynkey.rs.local. TXT &quot;dkim = all&quot; // Все письма должны быть подписаны DKIM ключем
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>CORS</title><link>https://owl-shaker.ru/blog/post/it/web/cors/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/cors/</guid><pubDate>Mon, 03 May 2021 12:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;in progress...&lt;/h2&gt;
+</content:encoded></item><item><title>CORS</title><link>https://owl-shaker.ru/post/it/web/cors/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/cors/</guid><pubDate>Mon, 03 May 2021 12:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;in progress...&lt;/h2&gt;
 &lt;h2&gt;Задача&lt;/h2&gt;
 &lt;p&gt;Часто возникает тривиальная задача, нужно получить данные на клиенте с другого домена. И, в большинстве случаев, простой ajax запрос будет заблокирован браузером c примерно такой формулировкой:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/cors/cors_1.png&quot; alt=&quot;CORS ERROR&quot; /&gt;&lt;/p&gt;
@@ -944,7 +944,7 @@ zone &quot;88.168.192.in-addr.arpa&quot; { type: master; file: &quot;/etc/bind/d
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://learn.javascript.ru/fetch-crossorigin&quot;&gt;learn js&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Виджет COVID-19</title><link>https://owl-shaker.ru/blog/post/it/web/widget-covid/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/widget-covid/</guid><pubDate>Sat, 11 Apr 2020 12:45:33 GMT</pubDate><content:encoded>&lt;p&gt;import Widget from &quot;../../../../components/CovidWidget.astro&quot;;&lt;/p&gt;
+</content:encoded></item><item><title>Виджет COVID-19</title><link>https://owl-shaker.ru/post/it/web/widget-covid/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/widget-covid/</guid><pubDate>Sat, 11 Apr 2020 12:45:33 GMT</pubDate><content:encoded>&lt;p&gt;import Widget from &quot;../../../../components/CovidWidget.astro&quot;;&lt;/p&gt;
 &lt;p&gt;&amp;lt;br /&amp;gt;
 &amp;lt;Widget client /&amp;gt;&lt;/p&gt;
 &lt;h1&gt;Виджет COVID-19&lt;/h1&gt;
@@ -1105,7 +1105,7 @@ drawStatistic();
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>SSH</title><link>https://owl-shaker.ru/blog/post/it/sysadmin/ssh/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/sysadmin/ssh/</guid><pubDate>Fri, 14 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Настройка SSH сервера&lt;/h1&gt;
+</content:encoded></item><item><title>SSH</title><link>https://owl-shaker.ru/post/it/sysadmin/ssh/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/sysadmin/ssh/</guid><pubDate>Fri, 14 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Настройка SSH сервера&lt;/h1&gt;
 &lt;p&gt;Установка SSH сервера &lt;code&gt;sudo apt-get install openssh-server&lt;/code&gt;
 Изменение файла настроек OpenSSH /etc/ssh/sshd_config&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Port 45466 # меняем стандартный порт 22
@@ -1142,7 +1142,7 @@ cp server1ssh.pub .ssh/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;cat server1openssh.key&lt;/code&gt; - для просмотра ключа. Видим что ключ зашифрован на DES, что не есть хорошо. Перешефруем на AES-128. Для этого просто сменим пароль на тот же самый &lt;code&gt;ssh-keygen -f server1openssh.key -p&lt;/code&gt;
 Для использования ssh на Linux &lt;code&gt;ssh -i server1openssh.key 102.145.32.100 -p 45466&lt;/code&gt;&lt;/p&gt;
-</content:encoded></item><item><title>Про обьекты в JS</title><link>https://owl-shaker.ru/blog/post/it/web/js-object/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/js-object/</guid><pubDate>Thu, 13 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Про обьекы в js (в процессе)&lt;/h1&gt;
+</content:encoded></item><item><title>Про обьекты в JS</title><link>https://owl-shaker.ru/post/it/web/js-object/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/js-object/</guid><pubDate>Thu, 13 Feb 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Про обьекы в js (в процессе)&lt;/h1&gt;
 &lt;h2&gt;Общие сведения&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Передача по ссылке&lt;/li&gt;
@@ -1170,7 +1170,7 @@ Object.getOwnPropertyNames(Object)
 &lt;li&gt;Про прототипное наследование&lt;/li&gt;
 &lt;li&gt;Изменение прототипа&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Меню гамбургер</title><link>https://owl-shaker.ru/blog/post/it/web/hamburger/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/hamburger/</guid><pubDate>Thu, 23 Jan 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Делаем меню-гамбургер&lt;/h1&gt;
+</content:encoded></item><item><title>Меню гамбургер</title><link>https://owl-shaker.ru/post/it/web/hamburger/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/hamburger/</guid><pubDate>Thu, 23 Jan 2020 12:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Делаем меню-гамбургер&lt;/h1&gt;
 &lt;p&gt;Простое SVG меню с анимацией на CSS.
 При открытии центральная линия становится прозрачной а 1 и 3/&lt;/p&gt;
 &lt;h2&gt;HTML&lt;/h2&gt;
@@ -1252,7 +1252,7 @@ Object.getOwnPropertyNames(Object)
 	overflow: hidden;
 }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Общение между page-context, content и background скриптами.</title><link>https://owl-shaker.ru/blog/post/it/web/chrome-extension-communication/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/chrome-extension-communication/</guid><pubDate>Wed, 10 Feb 2021 08:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;О чем речь ?&lt;/h2&gt;
+</content:encoded></item><item><title>Общение между page-context, content и background скриптами.</title><link>https://owl-shaker.ru/post/it/web/chrome-extension-communication/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/chrome-extension-communication/</guid><pubDate>Wed, 10 Feb 2021 08:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;О чем речь ?&lt;/h2&gt;
 &lt;p&gt;При разработке расширений для Chrome не очевиден способ взаимодействия page-context (скрипты находящиеcя в DOM) и расширением, его content и background скриптами.&lt;/p&gt;
 &lt;p&gt;Как общаются content и background скрипты описано в &lt;a href=&quot;https://developer.chrome.com/docs/extensions/&quot;&gt;документации&lt;/a&gt; по созданию расширений для хрома.&lt;/p&gt;
 &lt;h2&gt;Зачем такая коммуникация?&lt;/h2&gt;
@@ -1321,7 +1321,7 @@ chrome.runtime.onMessageExternal.addListener(
 &lt;ul&gt;
 &lt;li&gt;Большая часть информации взята с этого ответа на &lt;a href=&quot;https://stackoverflow.com/questions/26140443/executing-code-at-page-level-from-background-js-and-returning-the-value/26141393#26141393&quot;&gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Boilerplate для Webpack 4</title><link>https://owl-shaker.ru/blog/post/it/web/webpack-boilerplate/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/webpack-boilerplate/</guid><pubDate>Tue, 05 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Boilerplate для Webpack 4.&lt;/h1&gt;
+</content:encoded></item><item><title>Boilerplate для Webpack 4</title><link>https://owl-shaker.ru/post/it/web/webpack-boilerplate/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/webpack-boilerplate/</guid><pubDate>Tue, 05 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Boilerplate для Webpack 4.&lt;/h1&gt;
 &lt;p&gt;Для связки Vue + Less.
 2 конфига:&lt;/p&gt;
 &lt;ul&gt;
@@ -1507,7 +1507,7 @@ module.exports = {
   }
 }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Видеореклама в интернете. VAST и VPAID.</title><link>https://owl-shaker.ru/blog/post/it/web/internet-video-ads-vast-and-vpaid/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/internet-video-ads-vast-and-vpaid/</guid><pubDate>Fri, 25 Dec 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;Стандарты&lt;/h2&gt;
+</content:encoded></item><item><title>Видеореклама в интернете. VAST и VPAID.</title><link>https://owl-shaker.ru/post/it/web/internet-video-ads-vast-and-vpaid/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/internet-video-ads-vast-and-vpaid/</guid><pubDate>Fri, 25 Dec 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h2&gt;Стандарты&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://iabtechlab.com/standards/vast/&quot;&gt;VAST&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.iab.com/guidelines/digital-video-player-ad-interface-definition-vpaid-2-0/&quot;&gt;VPAID 2&lt;/a&gt;&lt;/li&gt;
@@ -1706,7 +1706,7 @@ vast-client-js)&lt;/li&gt;
 &lt;li&gt;Еще одна реализация плеера html5 от MDN, en. &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player&quot;&gt;Creating a cross-browser video player&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Можно узнать про временные метки (timestamp). &lt;a href=&quot;https://blog.addpipe.com/10-advanced-features-in-html5-video-player/amp/&quot;&gt;10 Advanced Features In The HTML5 video Player&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>Разные хаки</title><link>https://owl-shaker.ru/blog/post/it/web/hacks/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/post/it/web/hacks/</guid><pubDate>Tue, 05 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Chrome&lt;/h1&gt;
+</content:encoded></item><item><title>Разные хаки</title><link>https://owl-shaker.ru/post/it/web/hacks/</link><guid isPermaLink="true">https://owl-shaker.ru/post/it/web/hacks/</guid><pubDate>Tue, 05 May 2020 08:45:33 GMT</pubDate><content:encoded>&lt;h1&gt;Chrome&lt;/h1&gt;
 &lt;h3&gt;Шапка хрома сдвигает контент который должен быть во всю высоту устройства&lt;/h3&gt;
 &lt;p&gt;CSS классу с высотой во весь экран добавить.&lt;/p&gt;
 &lt;p&gt;Если кастомные свойства не поддерживаются то сработает height: 100%&lt;/p&gt;
@@ -1811,7 +1811,7 @@ export type mapedChartResult = {
   color: string;
 }[];
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>Cамый богатый человек в вавилоне</title><link>https://owl-shaker.ru/blog/book-review/babylon/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/babylon/</guid><pubDate>Thu, 09 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Часть заработанных вами денег пренадледит вам&lt;/h2&gt;
+</content:encoded></item><item><title>Cамый богатый человек в вавилоне</title><link>https://owl-shaker.ru/book-review/babylon/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/babylon/</guid><pubDate>Thu, 09 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Часть заработанных вами денег пренадледит вам&lt;/h2&gt;
 &lt;p&gt;Казалось, все заработанные мною деньги и так пренадлежат мне. Но это не так. Они пренадлежат магазину в котором я покупаю вещи, государству в виде налогов, кинотеатрам когда я хожу в кино. Когда все заработанные за месяц деньги тратятся, на что угодно, они по факту пренадлежат другим людям, тем кому я плачу.&lt;/p&gt;
 &lt;p&gt;Откладывай 10% от своего месячного заработка для себя, сохраняй эти деньги. Можно и больше, 10% это минимум. При этом жизнь должна быть полна и развлечений и радости. Нужно откладывать именно столько сколько будет даже не заметно для ежемесячных трат.
  
@@ -1830,7 +1830,7 @@ export type mapedChartResult = {
 &lt;h2&gt;Идеальный финансовый план&lt;/h2&gt;
 &lt;p&gt;Жить на 70% от всех доходов. 10% откладывать на долгий срок, скажем для образования и жизни ребенка. 20% вкладывать в рост денежных средств.&lt;/p&gt;
 &lt;p&gt;Хоть после прочтения и осталось мало заметок, в принципе книга маленькая, сам посыл очень важен. Кто не умеет распоряжаться своими деньгами, тот никогда не станет богатым, в своем понимании. Тому всегда будет мало. Сосредотачиваться нужно не на трате денег а на из приумножении, это доставит куда большую радость чем трата. А трудолюбие в любой сфере в купе с пониманием базовых, простейших, принципов финансовой грамотности сделает из любого человека в не зависимости от обстоятельств, богатым.&lt;/p&gt;
-</content:encoded><author>Клейсон Джорж Самюэль</author></item><item><title>Психология города. Как быть счастливым в мегаполисе.</title><link>https://owl-shaker.ru/blog/book-review/city-psychologies/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/city-psychologies/</guid><pubDate>Mon, 17 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Размер оконных рам.&lt;/h2&gt;
+</content:encoded><author>Клейсон Джорж Самюэль</author></item><item><title>Психология города. Как быть счастливым в мегаполисе.</title><link>https://owl-shaker.ru/book-review/city-psychologies/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/city-psychologies/</guid><pubDate>Mon, 17 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Размер оконных рам.&lt;/h2&gt;
 &lt;p&gt;Слишком маленькие рамы пропускают недостаточно света и угнетают психику. При это имеет куда большее значение высота чем ширина окна. Слишком большие окна вызывают беспокойство. Создаётся ощущение, что дома не безопасно.&lt;/p&gt;
 &lt;p&gt;Показательна история о крутом дизайнерском проекте на создателя которого подал в суд заказчик. Дом был полностью просматривается и хоть он находился в отдалении от других людей это вызывало дискомфорт у владелицы.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/psichology-in-city--fransuort.jpg&quot; alt=&quot;Дом Фарнсуорт в Иллинойсе.&quot; /&gt;
@@ -1920,7 +1920,7 @@ export type mapedChartResult = {
 &lt;p&gt;Декор должен варьироваться от природного (тонизирующих коричневых и зеленых оттенков) до разноцветных и возбуждающих (красный, желтый, оранжевый).&lt;/p&gt;
 &lt;p&gt;Температура лучше ближе к 25 чем к 20.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Хоторнский эксперимент.&lt;/strong&gt; Для мотивации сотрудников достаточно интересоваться их мнением.&lt;/p&gt;
-</content:encoded><author>Пол Кидуэлл</author></item><item><title>Эмоциональный интеллект ребенка</title><link>https://owl-shaker.ru/blog/book-review/emotional-intelligence/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/emotional-intelligence/</guid><pubDate>Mon, 29 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;И так, первая книга про эмоциональный интеллект которую прочёл.&lt;/p&gt;
+</content:encoded><author>Пол Кидуэлл</author></item><item><title>Эмоциональный интеллект ребенка</title><link>https://owl-shaker.ru/book-review/emotional-intelligence/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/emotional-intelligence/</guid><pubDate>Mon, 29 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;И так, первая книга про эмоциональный интеллект которую прочёл.&lt;/p&gt;
 &lt;h1&gt;Краткая рецензия.&lt;/h1&gt;
 &lt;p&gt;Хорошая книга на тему развития детей. Есть практические рекомендации. Есть примеры исследований в подтверждения позиции авторов. Приведены примеры из жизни пар участвовавших в экспериментах авторов.&lt;/p&gt;
 &lt;p&gt;Из минусов - довольно водянистое вступление, хотелось бы большей интерпретации приведенных тестов, хотелось бы больше ссылок на исследования.&lt;/p&gt;
@@ -2065,7 +2065,7 @@ export type mapedChartResult = {
 &lt;p&gt;Но времена изменились и для современных отцов, желающих разностороннего развития своих детей, важно уделять время для игр, воспитания, общения и помощи детям.&lt;/p&gt;
 &lt;p&gt;Эмоциональная холодность доказано вредит развитию детей. Общество старается как можно быстрее вытащить молодых мам на работу. Все чаще молодые семьи живут в отрыве от своих бабушек и дедушек. Эмоциональная и информационная нагрузка на детей все возрастает. Это реальности нашего времени.&lt;/p&gt;
 &lt;p&gt;По сути вся глава книги призывает отцов пересмотреть свои взгляды на воспитание детей, быть более вовлеченными в этот процесс.&lt;/p&gt;
-</content:encoded><author>Джон Готтман и Джоан Деклер</author></item><item><title>Как стать ребенку другом, оставаясь его родителем</title><link>https://owl-shaker.ru/blog/book-review/how-to-be-friends/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/how-to-be-friends/</guid><pubDate>Wed, 29 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Для кого?&lt;/h2&gt;
+</content:encoded><author>Джон Готтман и Джоан Деклер</author></item><item><title>Как стать ребенку другом, оставаясь его родителем</title><link>https://owl-shaker.ru/book-review/how-to-be-friends/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/how-to-be-friends/</guid><pubDate>Wed, 29 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Для кого?&lt;/h2&gt;
 &lt;p&gt;Для родителей и тех, кто готовится ими стать.&lt;/p&gt;
 &lt;h2&gt;Кратко о книге.&lt;/h2&gt;
 &lt;p&gt;Решили вместе с женой купить эту книгу после того как она повстречала на семинаре автора. Марина произвела крайне положительное впечатление и была самым запоминающимся событием с семинара.&lt;/p&gt;
@@ -2211,7 +2211,7 @@ export type mapedChartResult = {
 &lt;p&gt;Научить ребенка пользоваться интернетом. Объяснить в чем особенность такого общения. Что можно публиковать о себе а что не стоит, какие могут быть плохие последствия.&lt;/p&gt;
 &lt;p&gt;Когда ребенок попросит вместе зарегистрировать его в социальной сети. В начале ограничить круг кого он может добавлять в друзья, сказать что первое время мы будет вести страницу вместе. То же правило &lt;strong&gt;ВМЕСТО-ВМЕСТЕ-САМ&lt;/strong&gt;. Не зарегистрируете вместе, он сразу перейдет на этап САМ.&lt;/p&gt;
 &lt;p&gt;В этом разделе приводится очень поучительная история про педофила, который стал лучшим другом для мальчика и о котором родители узнали совершенно случайно.&lt;/p&gt;
-</content:encoded><author>Марина Cолотова</author></item><item><title>Самостоятельный ребенок, или Как стать &quot;ленивой мамой&quot;</title><link>https://owl-shaker.ru/blog/book-review/lyzi-mam--book/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/lyzi-mam--book/</guid><pubDate>Sat, 18 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
+</content:encoded><author>Марина Cолотова</author></item><item><title>Самостоятельный ребенок, или Как стать &quot;ленивой мамой&quot;</title><link>https://owl-shaker.ru/book-review/lyzi-mam--book/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/lyzi-mam--book/</guid><pubDate>Sat, 18 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
 &lt;p&gt;Хорошая книга. Попадает в мой топ рекомендаций для прочтения молодым родителям. Стоит периодически пролистывает для освежения в памяти.&lt;/p&gt;
 &lt;h2&gt;Для кого&lt;/h2&gt;
 &lt;p&gt;Обязательна для родителей и родителей родителей :) Остальные для общего развития, полезна как фундамент для понимания человеческой психики, становления человека и корней некоторых психологических косяков&lt;/p&gt;
@@ -2275,7 +2275,7 @@ export type mapedChartResult = {
 &lt;li&gt;История про игрушки которым холодно на полу и их нужно убрать в коробку.&lt;/li&gt;
 &lt;li&gt;Автор за совместный сон. Он сильно упрощает жизнь.&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded><author>Анна Быкова</author></item><item><title>Любовь на всю жизнь руководство для пар</title><link>https://owl-shaker.ru/blog/book-review/love-for-life--book/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/love-for-life--book/</guid><pubDate>Sun, 26 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
+</content:encoded><author>Анна Быкова</author></item><item><title>Любовь на всю жизнь руководство для пар</title><link>https://owl-shaker.ru/book-review/love-for-life--book/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/love-for-life--book/</guid><pubDate>Sun, 26 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
 &lt;p&gt;Прочитав книгу ее хочется подарить своему другу, чтобы сделать его жизнь лучше.&lt;/p&gt;
 &lt;h2&gt;О чем ?&lt;/h2&gt;
 &lt;p&gt;Позиционируется как об отношениях в паре. Но огромная часть имеет отношение к воспитанию детей. Видно как ошибки воспитания повлияют на будущие отношения человека.&lt;/p&gt;
@@ -2343,7 +2343,7 @@ export type mapedChartResult = {
 &lt;p&gt;&lt;img src=&quot;/assets/images/children/fear-of-pleasure.png&quot; alt=&quot;Цитата из книги про боязнь удовольствий&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Ситуации из практики авторов&lt;/h2&gt;
 &lt;p&gt;О их тут очень много, некоторые кажутся нереальным, на первый взгляд. По большей части вдохновляющие примеры.&lt;/p&gt;
-</content:encoded><author>Харвилл Хендрикс и Хелен Хант</author></item><item><title>Очаровательный кишечник. Как самый могущественный орган управляет нами</title><link>https://owl-shaker.ru/blog/book-review/my-charming-stomach/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/my-charming-stomach/</guid><pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая рецензия&lt;/h1&gt;
+</content:encoded><author>Харвилл Хендрикс и Хелен Хант</author></item><item><title>Очаровательный кишечник. Как самый могущественный орган управляет нами</title><link>https://owl-shaker.ru/book-review/my-charming-stomach/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/my-charming-stomach/</guid><pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая рецензия&lt;/h1&gt;
 &lt;p&gt;Удивительная книга, некоторые факты кажутся прям фантастическими.
 Думаю будет крайне полезна всем медикам.&lt;/p&gt;
 &lt;h2&gt;Анус&lt;/h2&gt;
@@ -2384,7 +2384,7 @@ export type mapedChartResult = {
 &lt;p&gt;При концентрации в мозгу бактерия воздействует на центр ответственный за формирование страха, на миндалевидное тело. Так согласно исследованиям в Чехии у тех у кого есть токсоплазмоз риск попасть в дтп значительно выше.
 Для борьбы с паразитом ( токсоплазма это именно одноклеточный паразит ) организм синтезируется ИДО ( индоламин-2,3-диоксигеназа ). Благодаря этому паразит быстрее переходит в неактивную фазу. Но одновременно с этим ИДО нужен для производства серотонина и когда он направлен на борьбу с паразитом человек испытывает депрессивное состояние. На время активной фазы.&lt;/p&gt;
 &lt;p&gt;При концентрации в пощади лобной доли увеличивается шанс развития шизофрении.&lt;/p&gt;
-</content:encoded><author>Джулия Эндерс</author></item><item><title>Не про бег</title><link>https://owl-shaker.ru/blog/book-review/not-about-run/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/not-about-run/</guid><pubDate>Tue, 21 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Кратко&lt;/h1&gt;
+</content:encoded><author>Джулия Эндерс</author></item><item><title>Не про бег</title><link>https://owl-shaker.ru/book-review/not-about-run/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/not-about-run/</guid><pubDate>Tue, 21 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Кратко&lt;/h1&gt;
 &lt;p&gt;Книга сборник историй из жизни автора, историй преодоления себя на марафонских дистанциях, рассказов из мировой истории, статей про биологию и спорт, образ жизни и питание, ну и совсем чуть чуть про философию.&lt;/p&gt;
 &lt;p&gt;Очень понравилась подача автора. Чередование разных историй в рамках одно главы сделаны великолепно. Нужно это для того, чтобы придать убедительности и подкрепить слова автора, и это работает.&lt;/p&gt;
 &lt;p&gt;Заскучать при прочтении не получится. Истории  разнообразные, увлекательные и поучительные.&lt;/p&gt;
@@ -2496,7 +2496,7 @@ export type mapedChartResult = {
 &lt;p&gt;Питание без глютена быстро снижает вес. Частично из-за бактерий, частично из-за хорошо работающего ниппеля (метаболической гибкости), частично из-за высокой чувствительности к инсулину. Но главное: пропадает спонтанное, неосознанно потребление всего съедобного.&lt;/p&gt;
 &lt;p&gt;Если ты решил питаться без булки, вариантов остаётся не много. Зайти поесть по-быстрому невозможно, все быстрое - из булки. К еде начинаешь относится осмысленно. Стратегия редкого питания начинает сама собой реализовываться: просто негде по-человечески перекусить.&lt;/p&gt;
 &lt;p&gt;В одном круассан 30 граммов углеводов и 231 калория, чтобы получить столько же энергии из риса, его нужно съесть 200 граммов.&lt;/p&gt;
-</content:encoded><author>Юрий Строфилов</author></item><item><title>Бег по правилу 80/20</title><link>https://owl-shaker.ru/blog/book-review/run-by-rule-80-20/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/run-by-rule-80-20/</guid><pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
+</content:encoded><author>Юрий Строфилов</author></item><item><title>Бег по правилу 80/20</title><link>https://owl-shaker.ru/book-review/run-by-rule-80-20/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/run-by-rule-80-20/</guid><pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Краткая оценка&lt;/h1&gt;
 &lt;p&gt;Книга обязательна для прочтения всем кто хочет заняться бегом. Цели не столь важны. Больший упор делается именно на соревновательный бег.&lt;/p&gt;
 &lt;p&gt;Прочтение книги даст следующие преимущества:&lt;/p&gt;
 &lt;ul&gt;
@@ -2637,7 +2637,7 @@ export type mapedChartResult = {
 &lt;/ul&gt;
 &lt;p&gt;У велика нужно правильно подогнать все характеристики, чтобы исключить травму.&lt;/p&gt;
 &lt;p&gt;Чем ближе упражнение к бегу, тем больше оно дает прирост в беге.&lt;/p&gt;
-</content:encoded><author>Мэт Фицджеральд</author></item><item><title>Радость малого</title><link>https://owl-shaker.ru/blog/book-review/the-joy-of-less/</link><guid isPermaLink="true">https://owl-shaker.ru/blog/book-review/the-joy-of-less/</guid><pubDate>Thu, 09 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Общее впечатление&lt;/h2&gt;
+</content:encoded><author>Мэт Фицджеральд</author></item><item><title>Радость малого</title><link>https://owl-shaker.ru/book-review/the-joy-of-less/</link><guid isPermaLink="true">https://owl-shaker.ru/book-review/the-joy-of-less/</guid><pubDate>Thu, 09 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Общее впечатление&lt;/h2&gt;
 &lt;p&gt;Книга оставила крайне положительные впечатления. Написана лёгким языком, снабжена множеством примеров. Мне импонирует желание автора привнести в жизнь читателя идею разумного потребления. Через всю книгу проходит идея заботы о природе, фокусировки внимания на людях а не на вещах. Прививается правильное отношение к вещам. Приобретая предмет человек становится ответственным за его использование, переиспользование и утилизацию.&lt;/p&gt;
 &lt;p&gt;Интересная идея радости пользования вещами без их обладания.&lt;/p&gt;
 &lt;p&gt;Книга разбита на три смысловых блока.&lt;/p&gt;
